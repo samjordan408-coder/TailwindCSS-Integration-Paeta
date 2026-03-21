@@ -14,7 +14,7 @@
     padding-bottom: 60px;
     font-family: 'Arial', sans-serif;
     background-image: url('news bg.png');
-    background-size: contain;
+    background-size: cover;
 }
 
 .news-header-tab {
