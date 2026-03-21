@@ -13,7 +13,7 @@
     background-color: #f4f9ff;
     padding-bottom: 60px;
     font-family: 'Arial', sans-serif;
-    background-image: url('/images/news bg.png');
+    background-image: url('news bg.png');
     background-size: cover;
 }
 
@@ -159,7 +159,7 @@
 
 /* MOBILE */
 .mobile {
-  background: linear-gradient(rgba(13, 63, 120, 0.85), rgba(13, 63, 120, 0.85)), url('/images/banking bg.jpg');
+  background: linear-gradient(rgba(13, 63, 120, 0.85), rgba(13, 63, 120, 0.85)), url('banking bg.jpg');
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -1718,7 +1718,7 @@ html {
   position: absolute;
   inset: 0;
   background-color: var(--blue-mid);
-  background-image: url("/images/landing\ page\ bg\ section\ 1.jpg");
+  background-image: url("landing\ page\ bg\ section\ 1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1996,7 +1996,7 @@ html {
 /* ----- About Us section ----- */
 .about-section {
   background-color: #e8f6fb;
-  background-image: url("/images/about us bg.jpg");
+  background-image: url("about us bg.jpg");
   background-size: cover;
   background-position: center top;
   background-repeat: repeat-y;
@@ -2150,7 +2150,7 @@ html {
 
 /* ----- Loan Services section ----- */
 .loan-section {
-  background-image: url("/images/about us bg.jpg");
+  background-image: url("about us bg.jpg");
   background-size: cover;
   background-position: center top;
   background-repeat: repeat-y;
