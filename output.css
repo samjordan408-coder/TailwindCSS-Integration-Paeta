@@ -166,20 +166,20 @@
   }
 }
 @layer utilities {
+  .sticky {
+    position: sticky;
+  }
   .flex {
     display: flex;
   }
   .grid {
     display: grid;
   }
-  .table {
-    display: table;
+  .hidden {
+    display: none;
   }
   .flex-shrink {
     flex-shrink: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -196,17 +196,6 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
-  }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
-  }
-  .underline {
-    text-decoration-line: underline;
   }
   .outline {
     outline-style: var(--tw-outline-style);
@@ -360,7 +349,7 @@
   transform: translateY(-8px);
 }
 .mobile {
-  background: linear-gradient(rgba(13, 63, 120, 0.85), rgba(13, 63, 120, 0.85)), url('mbanking bg.jpg');
+  background: linear-gradient(rgba(13, 63, 120, 0.85), rgba(13, 63, 120, 0.85)), url('banking bg.jpg');
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -1531,6 +1520,140 @@ html {
 .nav-links a:hover {
   opacity: 0.9;
 }
+.scroll-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+}
+.scroll-nav--visible {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+.scroll-nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.4rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.scroll-nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  flex: 1;
+}
+.scroll-nav-logo {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: rgba(8, 179, 229, 0.15);
+}
+.scroll-nav-name {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+.scroll-nav-name-line1, .scroll-nav-name-line2 {
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--blue-dark);
+}
+.scroll-nav-name-line2 {
+  font-size: 0.9rem;
+}
+.scroll-nav-burger {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1.5px solid rgba(13, 59, 102, 0.7);
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  flex-direction: column;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.scroll-nav-burger-line {
+  width: 18px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--blue-dark);
+}
+.scroll-nav-burger:hover {
+  background: rgba(13, 59, 102, 0.05);
+}
+.scroll-nav-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 320px;
+  max-width: 80vw;
+  padding: 4.5rem 1.5rem 1.5rem;
+  box-sizing: border-box;
+  background: #ffffff;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transform: translateX(100%);
+  transition: transform 0.2s ease-out;
+  z-index: 79;
+}
+.scroll-nav-close-wrap {
+  position: absolute;
+  top: 0.9rem;
+  right: 1rem;
+  list-style: none;
+}
+.scroll-nav-close {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(13, 59, 102, 0.08);
+  color: var(--blue-dark);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.scroll-nav-close:hover {
+  background: rgba(13, 59, 102, 0.16);
+}
+.scroll-nav-menu a {
+  color: var(--blue-dark);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.scroll-nav-menu a:hover {
+  opacity: 0.9;
+}
+.scroll-nav-menu.open {
+  transform: translateX(0);
+}
+@media (max-width: 600px) {
+  .scroll-nav-menu {
+    width: 100%;
+    max-width: 100%;
+  }
+}
 .hero {
   position: relative;
   min-height: 580px;
@@ -2099,10 +2222,6 @@ html {
   inherits: false;
   initial-value: solid;
 }
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -2170,7 +2289,6 @@ html {
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
-      --tw-font-weight: initial;
       --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
