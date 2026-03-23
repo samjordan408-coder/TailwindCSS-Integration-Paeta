@@ -11,7 +11,9 @@
     --color-blue-200: oklch(88.2% 0.059 254.128);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-slate-100: oklch(96.8% 0.007 247.896);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-900: oklch(21% 0.034 264.665);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-sm: 24rem;
@@ -409,6 +411,9 @@
   .bg-\[\#003366\] {
     background-color: #003366;
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-blue-400 {
     background-color: var(--color-blue-400);
   }
@@ -530,6 +535,12 @@
   .text-\[\#003366\] {
     color: #003366;
   }
+  .text-black {
+    color: var(--color-black);
+  }
+  .text-gray-500 {
+    color: var(--color-gray-500);
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -547,6 +558,11 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .placeholder-black {
+    &::placeholder {
+      color: var(--color-black);
+    }
   }
   .placeholder-white {
     &::placeholder {
@@ -632,6 +648,20 @@
       }
     }
   }
+  .hover\:text-\[\#0d3b66\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #0d3b66;
+      }
+    }
+  }
+  .hover\:text-black {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-black);
+      }
+    }
+  }
   .hover\:text-blue-200 {
     &:hover {
       @media (hover: hover) {
@@ -651,6 +681,11 @@
       @media (hover: hover) {
         opacity: 90%;
       }
+    }
+  }
+  .focus\:bg-black {
+    &:focus {
+      background-color: var(--color-black);
     }
   }
   .focus\:bg-white {
