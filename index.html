@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rural Bank of Paete Inc.</title>
   <link rel="stylesheet" href="src/output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
-  <script src="rating.js"></script>
+  <script src="./src/rating.js"></script>
 </head>
 <body>
   <!-- Header: single blue bar. Put your logo image in assets/header-logo.png -->
@@ -54,47 +55,77 @@
 </header>
 
   <!-- Secondary nav (optional) -->
-  <nav class="main-nav">
-    <div class="main-nav-inner">
-      <ul class="nav-links">
-        <li><a href="#what-we-offer">What We Offer</a></li>
-        <li><a href="#loans">Loan Services</a></li>
-        <li><a href="#news-updates">News & Updates</a></li>
-        <li><a href="#mobile-banking">Mobile Banking</a></li>
-        <li><a href="#security-trust">Security & Trust</a></li>
-        <li><a href="#why-us">Why Choose Us?</a></li>
-      </ul>
-    </div>
-  </nav>
+  <nav class="bg-slate-100/95 py-2.5 px-6">
+  <div class="max-w-7xl mx-auto flex items-center justify-center flex-wrap gap-4">
+    <ul class="list-none flex flex-wrap justify-center gap-x-6 gap-y-2">
+      <li>
+        <a href="#what-we-offer" class="text-[#0d3b66] no-underline font-medium text-[0.95rem] hover:opacity-90 transition-opacity">
+          What We Offer
+        </a>
+      </li>
+      <li>
+        <a href="#loans" class="text-[#0d3b66] no-underline font-medium text-[0.95rem] hover:opacity-90 transition-opacity">
+          Loan Services
+        </a>
+      </li>
+      <li>
+        <a href="#news-updates" class="text-[#0d3b66] no-underline font-medium text-[0.95rem] hover:opacity-90 transition-opacity">
+          News & Updates
+        </a>
+      </li>
+      <li>
+        <a href="#mobile-banking" class="text-[#0d3b66] no-underline font-medium text-[0.95rem] hover:opacity-90 transition-opacity">
+          Mobile Banking
+        </a>
+      </li>
+      <li>
+        <a href="#security-trust" class="text-[#0d3b66] no-underline font-medium text-[0.95rem] hover:opacity-90 transition-opacity">
+          Security & Trust
+        </a>
+      </li>
+      <li>
+        <a href="#why-us" class="text-[#0d3b66] no-underline font-medium text-[0.95rem] hover:opacity-90 transition-opacity">
+          Why Choose Us?
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
   <!-- Sticky nav: hidden at top, appears after scrolling past header -->
-  <nav class="scroll-nav" aria-label="Sticky navigation">
-    <div class="scroll-nav-inner">
-      <a href="#hero" class="scroll-nav-brand">
-        <img src="./images/logo.png" alt="Rural Bank of Paete" class="scroll-nav-logo">
-        <span class="scroll-nav-name">
-          <span class="scroll-nav-name-line1">Rural Bank of</span>
-          <span class="scroll-nav-name-line2">Paete Inc.</span>
-        </span>
-      </a>
-      <button class="scroll-nav-burger" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span class="scroll-nav-burger-line"></span>
-        <span class="scroll-nav-burger-line"></span>
-        <span class="scroll-nav-burger-line"></span>
-      </button>
-    </div>
-    <ul class="scroll-nav-menu">
-      <li class="scroll-nav-close-wrap">
-        <button class="scroll-nav-close" type="button" aria-label="Close menu">×</button>
-      </li>
-      <li><a href="#what-we-offer">What We Offer</a></li>
-      <li><a href="#loans">Loan Services</a></li>
-      <li><a href="#news-updates">News & Updates</a></li>
-      <li><a href="#mobile-banking">Mobile Banking</a></li>
-      <li><a href="#security-trust">Security & Trust</a></li>
-      <li><a href="#why-us">Why Choose Us?</a></li>
-    </ul>
-  </nav>
+  <nav class="fixed top-0 left-0 right-0 z-(200) bg-white shadow-[0_4px_10px_rgba(0,0,0,0.08)] -translate-y-full opacity-0 pointer-events-none transition-all duration-200 ease-out" id="scroll-nav" aria-label="Sticky navigation">
+  
+  <div class="max-w-(1200px) mx-auto px-6 py-1.5 flex items-center justify-between gap-3">
+    
+    <a href="#hero" class="flex items-center gap-2 no-underline flex-1">
+      <img src="images/logo.png" alt="Rural Bank of Paete" class="h-9 w-9 rounded-full object-contain bg-blue-400/15">
+      <div class="flex flex-col leading-[1.15]">
+        <span class="font-bold text-[0.8rem] text-[#0d3b66]">Rural Bank of</span>
+        <span class="font-bold text-[0.9rem] text-[#0d3b66]">Paete Inc.</span>
+      </div>
+    </a>
+
+    <button class="w-10 h-10 rounded-full border-[1.5px] border-[#0d3b66]/70 bg-white flex flex-col items-center justify-center gap-1 cursor-pointer shrink-0 hover:bg-[#0d3b66]/5 transition-colors" type="button" onclick="toggleMenu()">
+      <span class="w-(18px) h-[0.5] rounded-full bg-[#0d3b66]"></span>
+      <span class="w-(18px) h-[0.5] rounded-full bg-[#0d3b66]"></span>
+      <span class="w-(18px) h-[0.5] rounded-full bg-[#0d3b66]"></span>
+    </button>
+  </div>
+
+  <ul class="fixed top-0 right-0 h-screen w-80 max-w-[80vw] p-6 pt-18 bg-white shadow-[-4px_0_12px_rgba(0,0,0,0.15)] flex flex-col gap-3 translate-x-full transition-transform duration-200 ease-out z-(79) sm:max-w-full md:w-80" id="side-menu">
+    
+    <li class="absolute top-4 right-4 list-none">
+      <button class="w-8 h-8 rounded-full border-none bg-[#0d3b66]/10 text-[#0d3b66] text-2xl leading-none cursor-pointer hover:bg-[#0d3b66]/20 transition-colors" onclick="toggleMenu()">&times;</button>
+    </li>
+
+    <li><a href="#what-we-offer" class="text-[#0d3b66] no-underline font-medium text-[0.9rem] hover:opacity-90">What We Offer</a></li>
+    <li><a href="#loans" class="text-[#0d3b66] no-underline font-medium text-[0.9rem] hover:opacity-90">Loan Services</a></li>
+    <li><a href="#news-updates" class="text-[#0d3b66] no-underline font-medium text-[0.9rem] hover:opacity-90">News & Updates</a></li>
+    <li><a href="#mobile-banking" class="text-[#0d3b66] no-underline font-medium text-[0.9rem] hover:opacity-90">Mobile Banking</a></li>
+    <li><a href="#security-trust" class="text-[#0d3b66] no-underline font-medium text-[0.9rem] hover:opacity-90">Security & Trust</a></li>
+    <li><a href="#why-us" class="text-[#0d3b66] no-underline font-medium text-[0.9rem] hover:opacity-90">Why Choose Us?</a></li>
+  </ul>
+</nav>
 
   <!-- Hero: content + illustration, blue bg with subtle grid -->
   <section class="hero" id="hero">
