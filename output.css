@@ -1184,6 +1184,7 @@ body {
   line-height: 1.5;
   margin: 0;
 }
+
 @media (max-width: 768px) {
   .offer-inner {
     grid-template-columns: 1fr;
@@ -1760,6 +1761,7 @@ html {
   width: auto;
   object-fit: contain;
 }
+/*account*/
 .accounts {
   padding: 0 1.5rem 3rem;
   padding-top: 180px;
@@ -1777,6 +1779,7 @@ html {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  padding: 0 10px;
 }
 .carousel-btn {
   flex-shrink: 0;
@@ -1837,6 +1840,7 @@ html {
   flex: 1;
   line-height: 1.4;
 }
+
 .card-icon {
   width: var(--card-icon-size);
   height: var(--card-icon-size);
@@ -2306,3 +2310,5 @@ html {
     }
   }
 }
+
+

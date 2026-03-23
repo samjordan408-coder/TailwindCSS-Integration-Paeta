@@ -25,4 +25,26 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    document.addEventListener("DOMContentLoaded", function () {
+    const track = document.getElementById("scrollTrack");
+    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn");
+
+    // Amount to scroll: width of one card + the gap (20px)
+    const scrollAmount = 300; 
+
+    nextBtn.addEventListener("click", () => {
+        track.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    prevBtn.addEventListener("click", () => {
+        track.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+});
 });
