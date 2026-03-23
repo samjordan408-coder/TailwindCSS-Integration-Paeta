@@ -1,28 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("Script Loaded!");
+    const ratingBoxes = document.querySelectorAll('.rating-box');
 
-    const allInputs = document.querySelectorAll('.star-rating input');
-    
-    allInputs.forEach(radio => {
-        radio.addEventListener('change', (e) => {
-            console.log("Star clicked: " + e.target.value);
-            
-            const parentBox = e.target.closest('.rating-box');
-            
-            // Safety check to ensure parentBox exists
-            if (parentBox) {
-                const numDisplay = parentBox.querySelector('.rating-num');
-                
-                if (numDisplay) {
-                    // Update Text
-                    numDisplay.innerText = e.target.value + ".0";
-                    
-                    // Trigger Animation
-                    numDisplay.classList.remove('animate-pop');
-                    void numDisplay.offsetWidth; // The magic reset
-                    numDisplay.classList.add('animate-pop');
-                }
+    ratingBoxes.forEach(box => {
+        const inputs = box.querySelectorAll('input[type="radio"]');
+        const display = box.querySelector('.rating-num');
+
+        // Function to update the number
+        const updateRating = () => {
+            const checkedInput = box.querySelector('input[type="radio"]:checked');
+            if (checkedInput) {
+                // Formats the value to 1 decimal place (e.g., 5.0)
+                display.textContent = parseFloat(checkedInput.value).toFixed(1);
             }
+        };
+
+        // Update on load
+        updateRating();
+
+        // Update whenever a star is clicked
+        inputs.forEach(input => {
+            input.addEventListener('change', updateRating);
         });
     });
 });
