@@ -178,111 +178,191 @@
 </section>
 
   <!-- Account types carousel -->
-  <section class="accounts" id="offer">
-    <div class="accounts-inner">
-      <button type="button" class="carousel-btn carousel-prev" aria-label="Previous cards">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
-      </button>
-      <div class="cards-track">
-        <article class="account-card">
-          <div class="card-icon">
-            <img src="./images/icon1.png" alt="Regular Savings Icon" class="card-icon-img">
-          </div>
-          <h3>Regular Savings</h3>
-          <p>A deposit account that earns interest and allows you to save for your goals with ease and security.</p>
-          <a href="#regular-savings" class="btn-learn">Learn more...</a>
-        </article>
-        <article class="account-card">
-          <div class="card-icon">
-            <img src="./images/icon2.png" alt="Basic Deposit Icon" class="card-icon-img">
-          </div>
-          <h3>Basic Deposit Account</h3>
-          <p>A simplified savings account designed for the unbanked and those who want straightforward banking.</p>
-          <a href="#basic-deposit" class="btn-learn">Learn more...</a>
-        </article>
-        <article class="account-card">
-          <div class="card-icon">
-            <img src="./images/icon3.png" alt="Time Deposit Icon" class="card-icon-img">
-          </div>
-          <h3>Time Deposit Account</h3>
-          <p>A deposit account where funds are locked in for a set term to earn higher interest rates.</p>
-          <a href="#time-deposit" class="btn-learn">Learn more...</a>
-        </article>
-        <article class="account-card">
-          <div class="card-icon">
-            <img src="./images/icon4.png" alt="Checking Account Icon" class="card-icon-img">
-          </div>
-          <h3>Checking Account</h3>
-          <p>A deposit account that allows the account holder to issue checks for payments and transactions.</p>
-          <a href="#checking" class="btn-learn">Learn more...</a>
-        </article>
-      </div>
-      <button type="button" class="carousel-btn carousel-next" aria-label="Next cards">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
-      </button>
+  <section class="bg-white px-6 pb-12 pt-[180px] relative z-10" id="offer">
+  <div class="max-w-[1200px] mx-auto -mt-[300px] relative flex items-center justify-center gap-4">
+    
+    <button type="button" aria-label="Previous cards" 
+            class="shrink-0 w-[42px] h-[42px] rounded-[10px] bg-sky-400 text-white flex items-center justify-center hover:bg-sky-500 transition-colors duration-200">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
+
+    <div class="flex flex-1 min-w-0 gap-5 overflow-x-auto snap-x snap-mandatory py-2 no-scrollbar scroll-smooth">
+      
+      <article class="flex-1 min-w-[260px] bg-white snap-start rounded-xl p-4 flex flex-col min-h-[200px] border-[1.5px] border-sky-400/25 shadow-[0_8px_32px_rgba(8,179,229,0.18),0_2px_8px_rgba(0,0,0,0.1)] transition-all duration-200 hover:-translate-y-1 hover:border-sky-400/60 hover:shadow-[0_12px_40px_rgba(8,179,229,0.35),0_4px_12px_rgba(0,0,0,0.12)]">
+        
+        <div class="w-12 h-12 mb-2.5 mx-auto flex items-center justify-center bg-sky-50 rounded-lg shrink-0">
+          <img src="/images/icon1.png" alt="Regular Savings Icon" class="w-full h-full object-contain p-1.5">
+        </div>
+        
+        <h3 class="text-[0.95rem] font-bold text-sky-500 mb-1.5 text-center">Regular Savings</h3>
+        
+        <p class="text-[0.78rem] text-slate-500 flex-1 leading-relaxed text-center">
+          A deposit account that earns interest and allows you to save for your goals with ease and security.
+        </p>
+        
+        <a href="#regular-savings" class="block w-full mt-3 py-1.5 px-4 bg-sky-500 text-white text-[0.78rem] font-semibold text-center rounded-md hover:bg-slate-900 transition-colors">
+          Learn more...
+        </a>
+      </article>
+
+      <article class="flex-1 min-w-[260px] bg-white snap-start rounded-xl p-4 flex flex-col min-h-[200px] border-[1.5px] border-sky-400/25 shadow-[0_8px_32px_rgba(8,179,229,0.18),0_2px_8px_rgba(0,0,0,0.1)] transition-all duration-200 hover:-translate-y-1 hover:border-sky-400/60 hover:shadow-[0_12px_40px_rgba(8,179,229,0.35),0_4px_12px_rgba(0,0,0,0.12)]">
+        <div class="w-12 h-12 mb-2.5 mx-auto flex items-center justify-center bg-sky-50 rounded-lg shrink-0">
+          <img src="/images/icon2.png" alt="Basic Deposit Icon" class="w-full h-full object-contain p-1.5">
+        </div>
+        <h3 class="text-[0.95rem] font-bold text-sky-500 mb-1.5 text-center">Basic Deposit Account</h3>
+        <p class="text-[0.78rem] text-slate-500 flex-1 leading-relaxed text-center">
+          A simplified savings account designed for the unbanked and those who want straightforward banking.
+        </p>
+        <a href="#basic-deposit" class="block w-full mt-3 py-1.5 px-4 bg-sky-500 text-white text-[0.78rem] font-semibold text-center rounded-md hover:bg-slate-900 transition-colors">
+          Learn more...
+        </a>
+      </article>
+
+      <article class="flex-1 min-w-[260px] bg-white snap-start rounded-xl p-4 flex flex-col min-h-[200px] border-[1.5px] border-sky-400/25 shadow-[0_8px_32px_rgba(8,179,229,0.18),0_2px_8px_rgba(0,0,0,0.1)] transition-all duration-200 hover:-translate-y-1 hover:border-sky-400/60 hover:shadow-[0_12px_40px_rgba(8,179,229,0.35),0_4px_12px_rgba(0,0,0,0.12)]">
+        <div class="w-12 h-12 mb-2.5 mx-auto flex items-center justify-center bg-sky-50 rounded-lg shrink-0">
+          <img src="/images/icon3.png" alt="Time Deposit Icon" class="w-full h-full object-contain p-1.5">
+        </div>
+        <h3 class="text-[0.95rem] font-bold text-sky-500 mb-1.5 text-center">Time Deposit Account</h3>
+        <p class="text-[0.78rem] text-slate-500 flex-1 leading-relaxed text-center">
+          A deposit account where funds are locked in for a set term to earn higher interest rates.
+        </p>
+        <a href="#time-deposit" class="block w-full mt-3 py-1.5 px-4 bg-sky-500 text-white text-[0.78rem] font-semibold text-center rounded-md hover:bg-slate-900 transition-colors">
+          Learn more...
+        </a>
+      </article>
+
+      <article class="flex-1 min-w-[260px] bg-white snap-start rounded-xl p-4 flex flex-col min-h-[200px] border-[1.5px] border-sky-400/25 shadow-[0_8px_32px_rgba(8,179,229,0.18),0_2px_8px_rgba(0,0,0,0.1)] transition-all duration-200 hover:-translate-y-1 hover:border-sky-400/60 hover:shadow-[0_12px_40px_rgba(8,179,229,0.35),0_4px_12px_rgba(0,0,0,0.12)]">
+        <div class="w-12 h-12 mb-2.5 mx-auto flex items-center justify-center bg-sky-50 rounded-lg shrink-0">
+          <img src="/images/icon4.png" alt="Checking Account Icon" class="w-full h-full object-contain p-1.5">
+        </div>
+        <h3 class="text-[0.95rem] font-bold text-sky-500 mb-1.5 text-center">Checking Account</h3>
+        <p class="text-[0.78rem] text-slate-500 flex-1 leading-relaxed text-center">
+          A deposit account that allows the account holder to issue checks for payments and transactions.
+        </p>
+        <a href="#checking" class="block w-full mt-3 py-1.5 px-4 bg-sky-500 text-white text-[0.78rem] font-semibold text-center rounded-md hover:bg-slate-900 transition-colors">
+          Learn more...
+        </a>
+      </article>
+
     </div>
-  </section>
+
+    <button type="button" aria-label="Next cards" 
+            class="shrink-0 w-[42px] h-[42px] rounded-[10px] bg-sky-400 text-white flex items-center justify-center hover:bg-sky-500 transition-colors duration-200">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 18l6-6-6-6"/>
+      </svg>
+    </button>
+  </div>
+</section>
 
   <!-- What We Offer section -->
-  <section class="hero offer-page-hero" id="what-we-offer">
-    <div class="hero-bg"></div>
-    <div class="hero-inner offer-inner">
-      <div class="hero-content offer-content">
-        <h1>What We Offer?</h1>
-        <p class="hero-desc">Discover our range of financial services designed to help you save, grow, and manage your money with trust and convenience.</p>
-        <div class="products-label">Products we offer:</div>
-        <div class="inner-box">
-          <div class="box-section-title">Loans</div>
-          <div class="two-cols">
-            <ul>
-              <li>Agricultural Loan</li>
-              <li>Industrial Loan</li>
-              <li>Commercial Loan</li>
-              <li>Medical Loan</li>
-              <li>Housing Loan</li>
+  <div class="bg-white">
+
+  <section class="relative bg-sky-400 py-12 md:py-20 overflow-hidden" id="what-we-offer">
+    <div class="relative z-10 max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      
+      <div class="space-y-6">
+        <header>
+          <h1 class="text-white font-bold leading-tight text-3xl md:text-5xl mb-4">
+            What We Offer?
+          </h1>
+          <p class="text-white/95 text-base md:text-lg max-w-lg leading-relaxed">
+            Discover our range of financial services designed to help you save, grow, and manage your money with trust and convenience.
+          </p>
+        </header>
+
+        <div class="inline-block bg-white border border-sky-300/50 text-slate-900 font-bold text-xs uppercase tracking-widest px-5 py-2 rounded-full shadow-sm">
+          Products we offer:
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 md:p-8 max-w-lg border border-sky-200/50 shadow-xl">
+          <h3 class="text-slate-900 font-extrabold text-base mb-4 flex items-center">
+            <span class="w-1.5 h-4 bg-sky-500 rounded-full mr-2"></span>
+            Loans
+          </h3>
+          
+          <div class="grid grid-cols-2 gap-x-8 mb-6">
+            <ul class="space-y-2 text-[0.92rem] text-slate-700">
+              <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">Agricultural Loan</li>
+              <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">Industrial Loan</li>
+              <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">Commercial Loan</li>
+              <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">Medical Loan</li>
+              <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">Housing Loan</li>
             </ul>
-            <ul>
-              <li>Salary Loan</li>
-              <li>O.F.W. Loan</li>
-              <li>Pension Loan / SSS / GSIS</li>
-              <li>Other Government Supervised Loan</li>
+            <ul class="space-y-2 text-[0.92rem] text-slate-700">
+              <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">Salary Loan</li>
+              <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">O.F.W. Loan</li>
+              <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">Pension Loan</li>
+              <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">Gov. Supervised</li>
             </ul>
           </div>
-          <div class="divider"></div>
-          <div class="box-section-title">Deposit</div>
-          <ul class="deposit-list">
-            <li>Savings Account Deposit</li>
-            <li>Time Deposit</li>
+
+          <div class="h-px bg-slate-100 w-full mb-6"></div>
+
+          <h3 class="text-slate-900 font-extrabold text-base mb-3 flex items-center">
+            <span class="w-1.5 h-4 bg-sky-500 rounded-full mr-2"></span>
+            Deposit
+          </h3>
+          <ul class="space-y-2 text-[0.92rem] text-slate-700">
+            <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">Savings Account Deposit</li>
+            <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">Time Deposit</li>
           </ul>
         </div>
       </div>
-      <div class="hero-illustration">
-        <img src="./images/vector art 2 section 2.png" alt="What We Offer Illustration" class="hero-illus-img offer-vector-img">
+
+      <div class="flex justify-center items-center order-first md:order-last">
+        <img src="./images/vector art 2 section 2.png" alt="Financial Illustration" 
+             class="max-h-[320px] md:max-h-[420px] w-auto object-contain drop-shadow-2xl animate-pulse-slow">
       </div>
+    </div>
+    
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+  </section>
+
+  <section class="bg-slate-50 py-16 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr_240px] gap-8 items-stretch">
+      
+      <div class="bg-sky-400 text-white p-8 rounded-2xl shadow-md border border-white/20 transition-transform hover:scale-[1.02]">
+        <h4 class="font-bold text-lg mb-4 border-b border-white/30 pb-2">Members</h4>
+        <ul class="space-y-3 text-sm font-medium">
+          <li class="flex items-start gap-3">
+            <span class="opacity-80">•</span>
+            <span>Philippine Deposit Insurance Corporation</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="opacity-80">•</span>
+            <span>Rural Bankers Association of the Philippines</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="opacity-80">•</span>
+            <span>Confederation of Southern Tagalog Rural Bank</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-sky-400 text-white p-8 rounded-2xl shadow-md border border-white/20 transition-transform hover:scale-[1.02]">
+        <h4 class="font-bold text-lg mb-4 border-b border-white/30 pb-2">Services We Offer</h4>
+        <ul class="space-y-3 text-sm font-medium">
+          <li class="flex items-start gap-3">
+            <span class="opacity-80">•</span>
+            <span>Bancnet - POS (Point of Sale) - Cash Out</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-slate-900 text-white p-8 rounded-2xl flex items-center justify-center text-center shadow-xl hover:bg-slate-800 transition-all cursor-pointer group">
+        <p class="font-bold text-lg leading-snug group-hover:scale-105 transition-transform">
+          Let us know what<br>
+          <span class="text-sky-400">you want...</span>
+        </p>
+      </div>
+
     </div>
   </section>
 
-  <section class="offer-bottom">
-    <div class="offer-bottom-inner">
-      <div class="offer-block">
-        <h4>Members</h4>
-        <ul>
-          <li>Philippine Deposit Insurance Corporation</li>
-          <li>Rural Bankers Association of the Philippines</li>
-          <li>Confederation of Southern Tagalog Rural Bank</li>
-        </ul>
-      </div>
-      <div class="offer-block">
-        <h4>Services We Offer</h4>
-        <ul>
-          <li>Bancnet - POS (Point of Sale) - Cash Out</li>
-        </ul>
-      </div>
-      <div class="offer-block offer-cta">
-        <p>Let us know what<br>you want...</p>
-      </div>
-    </div>
-  </section>
+</div>
 
   <!-- About Us section -->
   <section class="about-section" id="about">
