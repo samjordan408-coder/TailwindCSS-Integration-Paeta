@@ -128,34 +128,52 @@
 </nav>
 
   <!-- Hero: content + illustration, blue bg with subtle grid -->
-  <section class="hero" id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-inner">
-      <div class="hero-content">
-        <h1>Welcome to<br>Rural Bank of Paete Inc.</h1>
-        <p class="hero-desc">Serving our community with trust, care, and financial empowerment since 1966. We offer secure and accessible banking services tailored to the needs of individuals, families, farmers, and small businesses in Paete and beyond.</p>
-        <p class="slogan">SOW, SAVE, GROW WITH US!</p>
-        <ul class="hero-features">
-          <li>
-            <span class="check" aria-hidden="true">✓</span>
-            Safe & Secure Banking
-          </li>
-          <li>
-            <span class="check" aria-hidden="true">✓</span>
-            Trusted by Generations
-          </li>
-          <li>
-            <span class="check" aria-hidden="true">✓</span>
-            Locally Grown, Digitally Ready
-          </li>
-        </ul>
-        <a href="#open-account" class="btn-cta">Open an Account Now!</a>
-      </div>
-      <div class="hero-illustration">
-        <img src="./images/vector art section 1.png" alt="Banking illustration" class="hero-illus-img">
-      </div>
+  <section class="relative min-h-[580px] flex items-start overflow-hidden py-8 md:py-0" id="hero">
+  
+  <div class="absolute inset-0 z-0 bg-[#00aeef] bg-[url('./images/landing-page-bg.jpg')] bg-cover bg-center bg-no-nowrap">
+    <div class="absolute inset-0 bg-black/10"></div>
+  </div>
+
+  <div class="relative z-10 max-w-[1200px] mx-auto px-6 py-8 md:py-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-start md:items-center">
+    
+    <div class="relative z-10">
+      <h1 class="text-white font-bold leading-tight mb-4 text-[1.85rem] md:text-[2.5rem] lg:text-[2.8rem]">
+        Welcome to<br>Rural Bank of Paete Inc.
+      </h1>
+      
+      <p class="text-white/95 text-base md:text-lg max-w-[520px] mb-5 leading-relaxed">
+        Serving our community with trust, care, and financial empowerment since 1966. We offer secure and accessible banking services tailored to the needs of individuals, families, farmers, and small businesses in Paete and beyond.
+      </p>
+      
+      <p class="inline-block bg-[#ffca08] text-white font-bold text-lg px-6 py-2 rounded-full mb-5 shadow-md">
+        SOW, SAVE, GROW WITH US!
+      </p>
+      
+      <ul class="flex flex-wrap md:flex-nowrap gap-x-5 gap-y-2 mb-6 list-none p-0">
+        <li class="text-white font-medium text-sm flex items-center gap-1.5 whitespace-nowrap">
+          <span class="font-bold text-base">✓</span> Safe & Secure Banking
+        </li>
+        <li class="text-white font-medium text-sm flex items-center gap-1.5 whitespace-nowrap">
+          <span class="font-bold text-base">✓</span> Trusted by Generations
+        </li>
+        <li class="text-white font-medium text-sm flex items-center gap-1.5 whitespace-nowrap">
+          <span class="font-bold text-base">✓</span> Locally Grown
+        </li>
+      </ul>
+      
+      <a href="#open-account" 
+         class="inline-block bg-[#0d3f78] text-white px-7 py-3 rounded-lg font-semibold no-underline border-2 border-white transition-all duration-200 hover:bg-[#00aeef] hover:-translate-y-0.5 active:translate-y-0 shadow-lg">
+        Open an Account Now!
+      </a>
     </div>
-  </section>
+
+    <div class="flex justify-center items-center self-center z-0">
+      <img src="/images/vector art section 1.png" alt="Banking illustration" 
+           class="max-w-full h-auto max-h-[450px] object-contain drop-shadow-2xl">
+    </div>
+
+  </div>
+</section>
 
   <!-- Account types carousel -->
   <section class="accounts" id="offer">
