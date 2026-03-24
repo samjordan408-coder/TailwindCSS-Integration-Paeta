@@ -128,62 +128,59 @@
 </nav>
 
   <!-- Hero: content + illustration, blue bg with subtle grid -->
-  <section class="relative min-h-[620px] flex items-start overflow-hidden py-8 md:py-0" id="hero">
+<section class="relative min-h-[580px] flex items-start overflow-hidden" id="hero">
   
-  <div class="absolute inset-0 z-0 bg-[url('/images/landing-page-bg.jpg')] bg-cover bg-center bg-no-repeat"></div>
-
-  <div class="absolute inset-0 z-0 bg-[#00aeef]/70"></div>
-
-  <div class="absolute inset-0 z-0 bg-black/10"></div>
+  <div class="absolute inset-0 z-0 bg-[#00aeef] bg-[url('/images/landing-page-bg-section-1.jpg')] bg-cover bg-center bg-no-repeat"></div>
 
   <div class="relative z-10 max-w-[1200px] mx-auto px-6 py-8 md:py-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-start md:items-center">
     
-    <div class="relative">
-      <h1 class="text-white font-bold leading-tight mb-4 text-[1.85rem] md:text-[2.5rem] lg:text-[2.8rem] drop-shadow-md">
+    <div class="order-1 md:order-2 flex justify-center items-center self-center relative z-0 h-[300px] md:h-auto">
+      <img src="/images/vector art section 1.png" 
+           alt="Banking illustration" 
+           class="w-auto h-auto max-h-[350px] md:max-h-[500px] object-contain drop-shadow-2xl">
+    </div>
+
+    <div class="order-2 md:order-1 relative z-10 flex flex-col items-center md:items-start text-center md:text-left">
+      
+      <h1 class="text-white font-bold leading-[1.25] mb-4 text-[clamp(1.85rem,4.5vw,2.5rem)] drop-shadow-md">
         Welcome to<br>Rural Bank of Paete Inc.
       </h1>
       
-      <p class="text-white/95 text-base md:text-lg max-w-[520px] mb-5 leading-relaxed drop-shadow-sm">
+      <p class="text-white/95 text-base max-w-[520px] mb-5 leading-normal">
         Serving our community with trust, care, and financial empowerment since 1966. We offer secure and accessible banking services tailored to the needs of individuals, families, farmers, and small businesses in Paete and beyond.
       </p>
       
-      <p class="inline-block bg-[#ffca08] text-white font-bold text-lg px-6 py-2 rounded-full mb-5 shadow-md">
+      <p class="inline-block bg-[#ffca08] text-white font-bold text-[1.15rem] px-6 py-2.5 rounded-full mb-5 shadow-sm">
         SOW, SAVE, GROW WITH US!
       </p>
       
-      <ul class="flex flex-wrap md:flex-nowrap gap-x-5 gap-y-2 mb-6 list-none p-0">
-        <li class="text-white font-medium text-sm flex items-center gap-1.5 whitespace-nowrap drop-shadow-sm">
-          <span class="font-bold text-base">✓</span> Safe & Secure Banking
+      <ul class="flex flex-nowrap gap-5 mb-6 list-none p-0 overflow-x-auto no-scrollbar">
+        <li class="text-white font-medium text-[0.85rem] flex items-center gap-1.5 whitespace-nowrap">
+          <span class="font-bold text-[0.9rem] shrink-0">✓</span> Safe & Secure Banking
         </li>
-        <li class="text-white font-medium text-sm flex items-center gap-1.5 whitespace-nowrap drop-shadow-sm">
-          <span class="font-bold text-base">✓</span> Trusted by Generations
+        <li class="text-white font-medium text-[0.85rem] flex items-center gap-1.5 whitespace-nowrap">
+          <span class="font-bold text-[0.9rem] shrink-0">✓</span> Trusted by Generations
         </li>
-        <li class="text-white font-medium text-sm flex items-center gap-1.5 whitespace-nowrap drop-shadow-sm">
-          <span class="font-bold text-base">✓</span> Locally Grown
+        <li class="text-white font-medium text-[0.85rem] flex items-center gap-1.5 whitespace-nowrap">
+          <span class="font-bold text-[0.9rem] shrink-0">✓</span> Locally Grown
         </li>
       </ul>
       
       <a href="#open-account" 
-         class="inline-block bg-[#0d3f78] text-white px-7 py-3 rounded-lg font-semibold no-underline border-2 border-white transition-all duration-200 hover:bg-[#00aeef] hover:-translate-y-0.5 shadow-lg">
+         class="inline-block bg-[#0d3f78] text-white px-7 py-3.5 rounded-md font-semibold border-2 border-white transition-all duration-200 hover:bg-[#00aeef] hover:-translate-y-[1px] shadow-lg">
         Open an Account Now!
       </a>
     </div>
 
-    <div class="relative flex justify-center items-end h-full w-full">
-  <img src="/images/vector art section 1.png" 
-       alt="Banking illustration" 
-       class=" w-auto max-h-[500px] lg:max-h-[650px] absolute -bottom-12 lg:-bottom-24 object-contain drop-shadow-2xl z-20">
-</div>
-
   </div>
 </section>
 
-  <!-- Account types carousel -->
-  <section class="bg-white px-6 pb-12 pt-[180px] relative z-10" id="offer">
+<!-- Account types carousel -->
+ <section class="bg-white px-6 pb-12 pt-[180px] relative z-10" id="offer">
   <div class="max-w-[1200px] mx-auto -mt-[300px] relative flex items-center justify-center gap-4">
     
     <button type="button" aria-label="Previous cards" 
-            class="shrink-0 w-[42px] h-[42px] rounded-[10px] bg-sky-400 text-white flex items-center justify-center hover:bg-sky-500 transition-colors duration-200">
+            class="hidden lg:flex shrink-0 w-[42px] h-[42px] rounded-[10px] bg-sky-400 text-white items-center justify-center hover:bg-sky-500 transition-colors duration-200 shadow-md">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M15 18l-6-6 6-6"/>
       </svg>
@@ -191,24 +188,20 @@
 
     <div class="flex flex-1 min-w-0 gap-5 overflow-x-auto snap-x snap-mandatory py-2 no-scrollbar scroll-smooth">
       
-      <article class="flex-1 min-w-[260px] bg-white snap-start rounded-xl p-4 flex flex-col min-h-[200px] border-[1.5px] border-sky-400/25 shadow-[0_8px_32px_rgba(8,179,229,0.18),0_2px_8px_rgba(0,0,0,0.1)] transition-all duration-200 hover:-translate-y-1 hover:border-sky-400/60 hover:shadow-[0_12px_40px_rgba(8,179,229,0.35),0_4px_12px_rgba(0,0,0,0.12)]">
-        
+      <article class="flex-1 min-w-[260px] md:min-w-[280px] bg-white snap-start rounded-xl p-4 flex flex-col min-h-[200px] border-[1.5px] border-sky-400/25 shadow-[0_8px_32px_rgba(8,179,229,0.18),0_2px_8px_rgba(0,0,0,0.1)] transition-all duration-200 hover:-translate-y-1 hover:border-sky-400/60 hover:shadow-[0_12px_40px_rgba(8,179,229,0.35),0_4px_12px_rgba(0,0,0,0.12)]">
         <div class="w-12 h-12 mb-2.5 mx-auto flex items-center justify-center bg-sky-50 rounded-lg shrink-0">
           <img src="/images/icon1.png" alt="Regular Savings Icon" class="w-full h-full object-contain p-1.5">
         </div>
-        
         <h3 class="text-[0.95rem] font-bold text-sky-500 mb-1.5 text-center">Regular Savings</h3>
-        
         <p class="text-[0.78rem] text-slate-500 flex-1 leading-relaxed text-center">
           A deposit account that earns interest and allows you to save for your goals with ease and security.
         </p>
-        
         <a href="#regular-savings" class="block w-full mt-3 py-1.5 px-4 bg-sky-500 text-white text-[0.78rem] font-semibold text-center rounded-md hover:bg-slate-900 transition-colors">
           Learn more...
         </a>
       </article>
 
-      <article class="flex-1 min-w-[260px] bg-white snap-start rounded-xl p-4 flex flex-col min-h-[200px] border-[1.5px] border-sky-400/25 shadow-[0_8px_32px_rgba(8,179,229,0.18),0_2px_8px_rgba(0,0,0,0.1)] transition-all duration-200 hover:-translate-y-1 hover:border-sky-400/60 hover:shadow-[0_12px_40px_rgba(8,179,229,0.35),0_4px_12px_rgba(0,0,0,0.12)]">
+      <article class="flex-1 min-w-[260px] md:min-w-[280px] bg-white snap-start rounded-xl p-4 flex flex-col min-h-[200px] border-[1.5px] border-sky-400/25 shadow-[0_8px_32px_rgba(8,179,229,0.18),0_2px_8px_rgba(0,0,0,0.1)] transition-all duration-200 hover:-translate-y-1 hover:border-sky-400/60 hover:shadow-[0_12px_40px_rgba(8,179,229,0.35),0_4px_12px_rgba(0,0,0,0.12)]">
         <div class="w-12 h-12 mb-2.5 mx-auto flex items-center justify-center bg-sky-50 rounded-lg shrink-0">
           <img src="/images/icon2.png" alt="Basic Deposit Icon" class="w-full h-full object-contain p-1.5">
         </div>
@@ -221,7 +214,7 @@
         </a>
       </article>
 
-      <article class="flex-1 min-w-[260px] bg-white snap-start rounded-xl p-4 flex flex-col min-h-[200px] border-[1.5px] border-sky-400/25 shadow-[0_8px_32px_rgba(8,179,229,0.18),0_2px_8px_rgba(0,0,0,0.1)] transition-all duration-200 hover:-translate-y-1 hover:border-sky-400/60 hover:shadow-[0_12px_40px_rgba(8,179,229,0.35),0_4px_12px_rgba(0,0,0,0.12)]">
+      <article class="flex-1 min-w-[260px] md:min-w-[280px] bg-white snap-start rounded-xl p-4 flex flex-col min-h-[200px] border-[1.5px] border-sky-400/25 shadow-[0_8px_32px_rgba(8,179,229,0.18),0_2px_8px_rgba(0,0,0,0.1)] transition-all duration-200 hover:-translate-y-1 hover:border-sky-400/60 hover:shadow-[0_12px_40px_rgba(8,179,229,0.35),0_4px_12px_rgba(0,0,0,0.12)]">
         <div class="w-12 h-12 mb-2.5 mx-auto flex items-center justify-center bg-sky-50 rounded-lg shrink-0">
           <img src="/images/icon3.png" alt="Time Deposit Icon" class="w-full h-full object-contain p-1.5">
         </div>
@@ -234,7 +227,7 @@
         </a>
       </article>
 
-      <article class="flex-1 min-w-[260px] bg-white snap-start rounded-xl p-4 flex flex-col min-h-[200px] border-[1.5px] border-sky-400/25 shadow-[0_8px_32px_rgba(8,179,229,0.18),0_2px_8px_rgba(0,0,0,0.1)] transition-all duration-200 hover:-translate-y-1 hover:border-sky-400/60 hover:shadow-[0_12px_40px_rgba(8,179,229,0.35),0_4px_12px_rgba(0,0,0,0.12)]">
+      <article class="flex-1 min-w-[260px] md:min-w-[280px] bg-white snap-start rounded-xl p-4 flex flex-col min-h-[200px] border-[1.5px] border-sky-400/25 shadow-[0_8px_32px_rgba(8,179,229,0.18),0_2px_8px_rgba(0,0,0,0.1)] transition-all duration-200 hover:-translate-y-1 hover:border-sky-400/60 hover:shadow-[0_12px_40px_rgba(8,179,229,0.35),0_4px_12px_rgba(0,0,0,0.12)]">
         <div class="w-12 h-12 mb-2.5 mx-auto flex items-center justify-center bg-sky-50 rounded-lg shrink-0">
           <img src="/images/icon4.png" alt="Checking Account Icon" class="w-full h-full object-contain p-1.5">
         </div>
@@ -250,7 +243,7 @@
     </div>
 
     <button type="button" aria-label="Next cards" 
-            class="shrink-0 w-[42px] h-[42px] rounded-[10px] bg-sky-400 text-white flex items-center justify-center hover:bg-sky-500 transition-colors duration-200">
+            class="hidden lg:flex shrink-0 w-[42px] h-[42px] rounded-[10px] bg-sky-400 text-white items-center justify-center hover:bg-sky-500 transition-colors duration-200 shadow-md">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M9 18l6-6-6-6"/>
       </svg>

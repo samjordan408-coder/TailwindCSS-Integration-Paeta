@@ -100,3 +100,31 @@ document.addEventListener('touchend', function (e) {
 document.addEventListener('gestureend', function (e) {
   setTimeout(function () { resetZoom(); }, 100);
 });
+
+const track = document.getElementById('cardTrack');
+  const nextBtn = document.getElementById('nextBtn');
+  const prevBtn = document.getElementById('prevBtn');
+
+  const getScrollAmount = () => {
+    const card = track.querySelector('article');
+    const style = window.getComputedStyle(track);
+    const gap = parseInt(style.columnGap) || 20;
+    return card.offsetWidth + gap;
+  };
+
+  nextBtn.addEventListener('click', () => {
+    track.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+  });
+
+  prevBtn.addEventListener('click', () => {
+    track.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+  });
+
+  // Updates button appearance based on scroll position
+  track.addEventListener('scroll', () => {
+    const isAtStart = track.scrollLeft <= 5;
+    const isAtEnd = track.scrollLeft + track.offsetWidth >= track.scrollWidth - 5;
+    
+    prevBtn.disabled = isAtStart;
+    nextBtn.disabled = isAtEnd;
+  });
