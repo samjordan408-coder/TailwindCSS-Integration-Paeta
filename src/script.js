@@ -101,30 +101,32 @@ document.addEventListener('gestureend', function (e) {
   setTimeout(function () { resetZoom(); }, 100);
 });
 
-const track = document.getElementById('cardTrack');
+
+  // Get the elements by the IDs we added above
+  const track = document.getElementById('cardTrack');
   const nextBtn = document.getElementById('nextBtn');
   const prevBtn = document.getElementById('prevBtn');
 
+  // Function to calculate how far to scroll (one card width + gap)
   const getScrollAmount = () => {
     const card = track.querySelector('article');
-    const style = window.getComputedStyle(track);
-    const gap = parseInt(style.columnGap) || 20;
-    return card.offsetWidth + gap;
+    const cardWidth = card.getBoundingClientRect().width;
+    const gap = 20; // Matches your 'gap-5' class (5 * 4px)
+    return cardWidth + gap;
   };
 
+  // Scroll right on Next click
   nextBtn.addEventListener('click', () => {
-    track.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+    track.scrollBy({
+      left: getScrollAmount(),
+      behavior: 'smooth'
+    });
   });
 
+  // Scroll left on Prev click
   prevBtn.addEventListener('click', () => {
-    track.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
-  });
-
-  // Updates button appearance based on scroll position
-  track.addEventListener('scroll', () => {
-    const isAtStart = track.scrollLeft <= 5;
-    const isAtEnd = track.scrollLeft + track.offsetWidth >= track.scrollWidth - 5;
-    
-    prevBtn.disabled = isAtStart;
-    nextBtn.disabled = isAtEnd;
+    track.scrollBy({
+      left: -getScrollAmount(),
+      behavior: 'smooth'
+    });
   });

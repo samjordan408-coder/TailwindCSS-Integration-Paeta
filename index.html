@@ -179,14 +179,14 @@
  <section class="bg-white px-6 pb-12 pt-[180px] relative z-10" id="offer">
   <div class="max-w-[1200px] mx-auto -mt-[300px] relative flex items-center justify-center gap-4">
     
-    <button type="button" aria-label="Previous cards" 
+    <button id="prevBtn" type="button" aria-label="Previous cards" 
             class="hidden lg:flex shrink-0 w-[42px] h-[42px] rounded-[10px] bg-sky-400 text-white items-center justify-center hover:bg-sky-500 transition-colors duration-200 shadow-md">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M15 18l-6-6 6-6"/>
       </svg>
     </button>
 
-    <div class="flex flex-1 min-w-0 gap-5 overflow-x-auto snap-x snap-mandatory py-2 no-scrollbar scroll-smooth">
+    <div id="cardTrack" class="flex flex-1 min-w-0 gap-5 overflow-x-auto snap-x snap-mandatory py-2 no-scrollbar scroll-smooth">
       
       <article class="flex-1 min-w-[260px] md:min-w-[280px] bg-white snap-start rounded-xl p-4 flex flex-col min-h-[200px] border-[1.5px] border-sky-400/25 shadow-[0_8px_32px_rgba(8,179,229,0.18),0_2px_8px_rgba(0,0,0,0.1)] transition-all duration-200 hover:-translate-y-1 hover:border-sky-400/60 hover:shadow-[0_12px_40px_rgba(8,179,229,0.35),0_4px_12px_rgba(0,0,0,0.12)]">
         <div class="w-12 h-12 mb-2.5 mx-auto flex items-center justify-center bg-sky-50 rounded-lg shrink-0">
@@ -242,7 +242,7 @@
 
     </div>
 
-    <button type="button" aria-label="Next cards" 
+    <button id="nextBtn" type="button" aria-label="Next cards" 
             class="hidden lg:flex shrink-0 w-[42px] h-[42px] rounded-[10px] bg-sky-400 text-white items-center justify-center hover:bg-sky-500 transition-colors duration-200 shadow-md">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M9 18l6-6-6-6"/>
@@ -272,36 +272,36 @@
         </div>
 
         <div class="bg-white rounded-2xl p-6 md:p-8 max-w-lg border border-sky-200/50 shadow-xl">
-          <h3 class="text-slate-900 font-extrabold text-base mb-4 flex items-center">
-            <span class="w-1.5 h-4 bg-sky-500 rounded-full mr-2"></span>
+          <h3 class="text-sky-900 font-bold text-base mb-4 flex items-center">
+            <span class="w-1.5 h-4 bg-white rounded-full mr-2"></span>
             Loans
           </h3>
           
           <div class="grid grid-cols-2 gap-x-8 mb-6">
-            <ul class="space-y-2 text-[0.92rem] text-slate-700">
-              <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">Agricultural Loan</li>
-              <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">Industrial Loan</li>
-              <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">Commercial Loan</li>
-              <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">Medical Loan</li>
-              <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">Housing Loan</li>
+            <ul class="space-y-2 text-[0.92rem] text-slate-700 font-semibold">
+              <li class="before:content-['•'] before:text-slate-700 before:mr-2 before:font-bold">Agricultural Loan</li>
+              <li class="before:content-['•'] before:text-slate-700 before:mr-2 before:font-bold">Industrial Loan</li>
+              <li class="before:content-['•'] before:text-slate-700 before:mr-2 before:font-bold">Commercial Loan</li>
+              <li class="before:content-['•'] before:text-slate-700 before:mr-2 before:font-bold">Medical Loan</li>
+              <li class="before:content-['•'] before:text-slate-700 before:mr-2 before:font-bold">Housing Loan</li>
             </ul>
-            <ul class="space-y-2 text-[0.92rem] text-slate-700">
-              <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">Salary Loan</li>
-              <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">O.F.W. Loan</li>
-              <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">Pension Loan</li>
-              <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">Gov. Supervised</li>
+            <ul class="space-y-2 text-[0.92rem] text-slate-700 font-semibold">
+              <li class="before:content-['•'] before:text-slate-700 before:mr-2 before:font-bold">Salary Loan</li>
+              <li class="before:content-['•'] before:text-slate-700 before:mr-2 before:font-bold">O.F.W. Loan</li>
+              <li class="before:content-['•'] before:text-slate-700 before:mr-2 before:font-bold">Pension Loan / SSS / GSIS</li>
+              <li class="before:content-['•'] before:text-slate-700 before:mr-2 before:font-bold">Other Government Supervised Loan</li>
             </ul>
           </div>
 
           <div class="h-px bg-slate-100 w-full mb-6"></div>
 
-          <h3 class="text-slate-900 font-extrabold text-base mb-3 flex items-center">
-            <span class="w-1.5 h-4 bg-sky-500 rounded-full mr-2"></span>
+          <h3 class="text-sky-900 font-bold text-base mb-3 flex items-center">
+            <span class="w-1.5 h-4 bg-white rounded-full mr-2"></span>
             Deposit
           </h3>
-          <ul class="space-y-2 text-[0.92rem] text-slate-700">
-            <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">Savings Account Deposit</li>
-            <li class="before:content-['•'] before:text-sky-500 before:mr-2 before:font-bold">Time Deposit</li>
+          <ul class="space-y-2 text-[0.92rem] text-slate-700 font-semibold">
+            <li class="before:content-['•'] before:text-slate-700 before:mr-2 before:font-bold">Savings Account Deposit</li>
+            <li class="before:content-['•'] before:text-slate-700 before:mr-2 before:font-bold">Time Deposit</li>
           </ul>
         </div>
       </div>
@@ -346,10 +346,10 @@
         </ul>
       </div>
 
-      <div class="bg-slate-900 text-white p-8 rounded-2xl flex items-center justify-center text-center shadow-xl hover:bg-slate-800 transition-all cursor-pointer group">
+      <div class="bg-sky-900 text-white p-8 rounded-2xl flex items-center justify-center text-center shadow-xl hover:bg-slate-800 transition-all cursor-pointer group">
         <p class="font-bold text-lg leading-snug group-hover:scale-105 transition-transform">
           Let us know what<br>
-          <span class="text-sky-400">you want...</span>
+          <span class="text-white">you want...</span>
         </p>
       </div>
 
@@ -757,6 +757,7 @@
     <p>&copy; 2025 Rural Bank of Paete Inc. - All Rights Reserved</p>
   </div>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="src/script.js"></script>
 </body>
 </html>
