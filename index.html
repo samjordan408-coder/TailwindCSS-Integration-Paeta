@@ -93,37 +93,35 @@
 </nav>
 
   <!-- Sticky nav: hidden at top, appears after scrolling past header -->
-  <nav class="fixed top-0 left-0 right-0 z-(200) bg-white shadow-[0_4px_10px_rgba(0,0,0,0.08)] -translate-y-full opacity-0 pointer-events-none transition-all duration-200 ease-out" id="scroll-nav" aria-label="Sticky navigation">
+  <nav id="scroll-nav" class="fixed top-0 left-0 right-0 z-[200] bg-white shadow-lg -translate-y-full opacity-0 pointer-events-none transition-all duration-300 ease-in-out" aria-label="Sticky navigation">
   
-  <div class="max-w-(1200px) mx-auto px-6 py-1.5 flex items-center justify-between gap-3">
+  <div class="max-w-[1200px] mx-auto px-6 py-2 flex items-center justify-between gap-3">
     
-    <a href="#hero" class="flex items-center gap-2 no-underline flex-1">
-      <img src="images/logo.png" alt="Rural Bank of Paete" class="h-9 w-9 rounded-full object-contain bg-blue-400/15">
-      <div class="flex flex-col leading-[1.15]">
-        <span class="font-bold text-[0.8rem] text-[#0d3b66]">Rural Bank of</span>
-        <span class="font-bold text-[0.9rem] text-[#0d3b66]">Paete Inc.</span>
+    <a href="#hero" class="flex items-center gap-2">
+      <img src="images/logo.png" alt="Rural Bank of Paete" class="h-10 w-10 rounded-full object-contain bg-blue-400/10">
+      <div class="flex flex-col leading-tight">
+        <span class="font-bold text-[0.75rem] text-[#0d3b66]">Rural Bank of</span>
+        <span class="font-bold text-[0.85rem] text-[#0d3b66]">Paete Inc.</span>
       </div>
     </a>
 
-    <button class="w-10 h-10 rounded-full border-[1.5px] border-[#0d3b66]/70 bg-white flex flex-col items-center justify-center gap-1 cursor-pointer shrink-0 hover:bg-[#0d3b66]/5 transition-colors" type="button" onclick="toggleMenu()">
-      <span class="w-(18px) h-[0.5] rounded-full bg-[#0d3b66]"></span>
-      <span class="w-(18px) h-[0.5] rounded-full bg-[#0d3b66]"></span>
-      <span class="w-(18px) h-[0.5] rounded-full bg-[#0d3b66]"></span>
+    <button class="w-10 h-10 rounded-full border-[1.5px] border-[#0d3b66]/70 flex flex-col items-center justify-center gap-1.5 cursor-pointer hover:bg-slate-50 transition-colors" type="button" onclick="toggleMenu()">
+      <span class="w-5 h-[2px] rounded-full bg-[#0d3b66]"></span>
+      <span class="w-5 h-[2px] rounded-full bg-[#0d3b66]"></span>
+      <span class="w-5 h-[2px] rounded-full bg-[#0d3b66]"></span>
     </button>
   </div>
 
-  <ul class="fixed top-0 right-0 h-screen w-80 max-w-[80vw] p-6 pt-18 bg-white shadow-[-4px_0_12px_rgba(0,0,0,0.15)] flex flex-col gap-3 translate-x-full transition-transform duration-200 ease-out z-(79) sm:max-w-full md:w-80" id="side-menu">
+  <ul id="side-menu" class="fixed top-0 right-0 h-screen w-80 max-w-[80vw] p-6 pt-20 bg-white shadow-2xl flex flex-col gap-4 translate-x-full transition-transform duration-300 ease-in-out z-[201]">
     
-    <li class="absolute top-4 right-4 list-none">
-      <button class="w-8 h-8 rounded-full border-none bg-[#0d3b66]/10 text-[#0d3b66] text-2xl leading-none cursor-pointer hover:bg-[#0d3b66]/20 transition-colors" onclick="toggleMenu()">&times;</button>
+    <li class="absolute top-6 right-6 list-none">
+      <button class="w-10 h-10 rounded-full bg-slate-100 text-[#0d3b66] text-3xl flex items-center justify-center cursor-pointer hover:bg-slate-200" onclick="toggleMenu()">&times;</button>
     </li>
 
-    <li><a href="#what-we-offer" class="text-[#0d3b66] no-underline font-medium text-[0.9rem] hover:opacity-90">What We Offer</a></li>
-    <li><a href="#loans" class="text-[#0d3b66] no-underline font-medium text-[0.9rem] hover:opacity-90">Loan Services</a></li>
-    <li><a href="#news-updates" class="text-[#0d3b66] no-underline font-medium text-[0.9rem] hover:opacity-90">News & Updates</a></li>
-    <li><a href="#mobile-banking" class="text-[#0d3b66] no-underline font-medium text-[0.9rem] hover:opacity-90">Mobile Banking</a></li>
-    <li><a href="#security-trust" class="text-[#0d3b66] no-underline font-medium text-[0.9rem] hover:opacity-90">Security & Trust</a></li>
-    <li><a href="#why-us" class="text-[#0d3b66] no-underline font-medium text-[0.9rem] hover:opacity-90">Why Choose Us?</a></li>
+    <li class="border-b border-slate-100 pb-2"><a href="#about" class="text-[#0d3b66] font-bold text-lg" onclick="toggleMenu()">About Us</a></li>
+    <li class="border-b border-slate-100 pb-2"><a href="#loans" class="text-[#0d3b66] font-bold text-lg" onclick="toggleMenu()">Loan Services</a></li>
+    <li class="border-b border-slate-100 pb-2"><a href="#news-updates" class="text-[#0d3b66] font-bold text-lg" onclick="toggleMenu()">News & Updates</a></li>
+    <li><a href="#contact" class="text-[#0d3b66] font-bold text-lg" onclick="toggleMenu()">Contact Us</a></li>
   </ul>
 </nav>
 
