@@ -548,23 +548,60 @@
 </section>
 
   <!-- ================= MOBILE ================= -->
-  <section class="mobile" id="mobile-banking">
-    <div class="mobile-container">
-      <div class="header-wrapper">
-        <div class="pill-badge">Mobile Banking</div>
-      </div>
-      <div class="content-row">
-        <div class="mobile-img">
-          <img src="./images/mobile.png" alt="App Preview">
-        </div>
-        <div class="mobile-content">
-          <h1>Your bank in <br> your hands.</h1>
-          <p>Manage your savings, transfer funds, and apply for loans, anytime, anywhere.</p>
-          <button class="btn-coming-soon">Coming Soon!</button>
-        </div>
+  <section 
+  id="mobile-banking"
+  class="bg-[linear-gradient(rgba(13,63,120,0.85),rgba(13,63,120,0.85))] 
+         bg-cover bg-center text-white 
+         py-[60px] px-[20px] pt-[60px] pb-0 
+         flex justify-center overflow-hidden font-[Inter]"
+         style="background-image: url(images/mbanking\ bg.jpg);"
+>
+  <div class="max-w-[1200px] w-full flex flex-col items-center">
+
+    <!-- Header -->
+    <div class="w-full flex justify-center mb-[50px]">
+      <div class="bg-white text-[#0d3f78] px-[45px] py-[12px] rounded-full 
+                  font-extrabold text-[24px] whitespace-nowrap
+                  shadow-[0_4px_15px_rgba(0,0,0,0.2)]">
+        Mobile Banking
       </div>
     </div>
-  </section>
+
+    <!-- Content -->
+    <div class="flex items-center justify-center gap-[60px] w-full">
+
+      <!-- Image -->
+      <div class="flex-1 flex justify-end">
+        <img 
+          src="./images/mobile.png" 
+          alt="App Preview"
+          class="w-full max-w-[400px] 
+                 drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] 
+                 mb-[-270px]"
+        >
+      </div>
+
+      <!-- Text -->
+      <div class="flex-1 text-left">
+        <h1 class="text-[68px] font-extrabold leading-[1.0] mb-[20px] tracking-[-1.5px]">
+          Your bank in <br> your hands.
+        </h1>
+
+        <p class="text-[1.3rem] leading-[1.5] mb-[40px] max-w-[500px]">
+          Manage your savings, transfer funds, and apply for loans, anytime, anywhere.
+        </p>
+
+        <button class="bg-[#f04e3e] text-white text-[2rem] font-extrabold 
+                       px-[50px] py-[15px] border-[5px] border-white 
+                       rounded-full cursor-pointer
+                       shadow-[0_10px_25px_rgba(0,0,0,0.3)]">
+          Coming Soon!
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <!-- ================= SECURITY ================= -->
 <section id="security-trust" class="py-[60px] font-[Arial] relative mx-auto">
