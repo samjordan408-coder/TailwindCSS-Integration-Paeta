@@ -567,37 +567,70 @@
   </section>
 
   <!-- ================= SECURITY ================= -->
-  <section class="security-section" id="security-trust">
-    <div class="security-divider">
-      <div class="security-badge">
-        <img src="./images/handshake.png" alt="Security" class="badge-icon">
-        <span class="badge-text">Security & Trust</span>
-      </div>
+<section id="security-trust" class="py-[60px] font-[Arial] relative mx-auto">
+
+  <!-- Divider -->
+  <div class="flex items-center w-screen relative left-1/2 right-1/2 
+              -ml-[50vw] -mr-[50vw] mb-[100px] mt-[-20px]">
+
+    <!-- Left line -->
+    <div class="flex-1 h-[20px] bg-[#0d3f78]"></div>
+
+    <!-- Badge -->
+    <div class="flex items-center px-[30px] gap-[15px]">
+      <img src="./images/handshake.png" class="w-[50px] h-auto">
+      <span class="text-[#0d3f78] text-[36px] font-black whitespace-nowrap">
+        Security & Trust
+      </span>
     </div>
-    <div class="security-main-content">
-      <div class="compliance-column">
-        <h2 class="compliance-header">We follow strict compliance with:</h2>
-        <ul class="compliance-list">
-          <li>
-            <img src="./images/check.jpg" alt="check" class="check-icon">
-            BSP Regulations
-          </li>
-          <li>
-            <img src="./images/check.jpg" alt="check" class="check-icon">
-            AMLA &amp; KYC Guidelines
-          </li>
-          <li>
-            <img src="./images/check.jpg" alt="check" class="check-icon">
-            Data Privacy Act of 2012
-          </li>
-        </ul>
-        <a href="#" class="btn-learn-more">Learn more...</a>
-      </div>
-      <div class="illustration-column">
-        <img src="./images/security vector.png" alt="Security Illustration" class="main-illustration">
-      </div>
+
+    <!-- Right line -->
+    <div class="flex-1 h-[20px] bg-[#0d3f78]"></div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="flex justify-between items-center gap-[40px] px-[20px]">
+
+    <!-- Left Column -->
+    <div class="flex-1">
+      <h2 class="text-[#0d3f78] text-[25px] font-extrabold mb-[35px] ml-[80px] whitespace-nowrap">
+        We follow strict compliance with:
+      </h2>
+
+      <ul class="ml-[120px] mb-[40px] space-y-[15px]">
+        <li class="flex items-center text-[#0d3f78] text-[24px] font-bold">
+          <img src="./images/check.jpg" class="w-[45px] h-[45px] mr-[10px]">
+          BSP Regulations
+        </li>
+
+        <li class="flex items-center text-[#0d3f78] text-[24px] font-bold">
+          <img src="./images/check.jpg" class="w-[45px] h-[45px] mr-[10px]">
+          AMLA & KYC Guidelines
+        </li>
+
+        <li class="flex items-center text-[#0d3f78] text-[24px] font-bold">
+          <img src="./images/check.jpg" class="w-[45px] h-[45px] mr-[10px]">
+          Data Privacy Act of 2012
+        </li>
+      </ul>
+
+      <a href="#"
+         class="inline-block bg-[#0d3f78] text-white px-[35px] py-[12px] 
+                rounded-[8px] text-[18px] font-semibold 
+                shadow-[0_4px_10px_rgba(0,0,0,0.15)] 
+                ml-[180px] transition-transform duration-200 hover:-translate-y-[2px] hover:bg-[#124d91]">
+        Learn more...
+      </a>
     </div>
-  </section>
+
+    <!-- Right Column -->
+    <div class="flex-[1.2] flex justify-end">
+      <img src="./images/security vector.png"
+           class="w-[700px] h-auto mr-[70px]">
+    </div>
+
+  </div>
+</section>
 
   <!-- ================= WHY CHOOSE ================= -->
  <section id="why-us" class="bg-[#00aeef] py-[60px] px-[20px] text-center font-[Arial]">
