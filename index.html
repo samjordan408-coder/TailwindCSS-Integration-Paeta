@@ -734,79 +734,179 @@
 </section>
 
   <!-- ================= TESTIMONIALS ================= -->
-  <section class="testimonials">
-    <div class="section-badge">Testimonials</div>
-    <div class="testimonial-wrapper">
-      <div class="testimonial-card">
-        <div class="avatar">
-          <img src="./images/jonathan.png" alt="Jonathan">
-        </div>
-        <div class="card-content">
-          <h3>Jonathan Dela Cruz</h3>
-          <span class="role">OFW</span>
-          <div class="rating-box">
-            <div class="star-rating">
-  <input type="radio" id="c1-s5" name="rating1" value="5" checked><label for="c1-s5">★</label>
-  <input type="radio" id="c1-s4" name="rating1" value="4"><label for="c1-s4">★</label>
-  <input type="radio" id="c1-s3" name="rating1" value="3"><label for="c1-s3">★</label>
-  <input type="radio" id="c1-s2" name="rating1" value="2"><label for="c1-s2">★</label>
-  <input type="radio" id="c1-s1" name="rating1" value="1"><label for="c1-s1">★</label>
-</div>
-<span class="rating-num">5.0</span>
-          </div>
-          <p class="quote-text">
-            Even while I'm working abroad, I can easily manage my savings and send money to my family through their online banking. Truly reliable and convenient.
-          </p>
-        </div>
+<section class="py-[80px] px-[20px] text-center bg-white font-[Arial]">
+
+  <!-- Badge -->
+  <div class="bg-[#00aeef] text-white inline-block 
+              py-[12px] w-full max-w-[1200px] 
+              rounded-[10px] text-[32px] font-extrabold 
+              mb-[100px] shadow-[0_4px_10px_rgba(0,0,0,0.1)]">
+    Testimonials
+  </div>
+
+  <!-- Wrapper -->
+  <div class="flex justify-center gap-[30px] flex-wrap max-w-[1200px] mx-auto">
+
+    <!-- CARD 1 -->
+    <div class="bg-white w-[320px] rounded-[20px] relative 
+                shadow-[0_0_25px_rgba(0,174,239,0.2)] 
+                border border-[rgba(0,174,239,0.1)] 
+                pt-[60px] pb-[30px] px-[20px]
+                 transition-all duration-300 ease-in-out
+            hover:-translate-y-[10px]
+            hover:shadow-[0_15px_40px_rgba(0,174,239,0.35)]
+            hover:scale-[1.02]">
+
+      <!-- Avatar -->
+      <div class="w-[100px] h-[100px] rounded-full bg-[#89cff0] 
+                  border-[3px] border-[#0d3f78]
+                  absolute top-[-50px] left-1/2 -translate-x-1/2
+                  overflow-hidden flex items-center justify-center">
+        <img src="./images/jonathan.png" class="w-full">
       </div>
 
-      <div class="testimonial-card">
-        <div class="avatar">
-          <img src="./images/maria.png" alt="Maria">
+      <h3 class="text-[#0d3f78] text-[24px] font-extrabold mt-[10px] mb-[5px]">
+        Jonathan Dela Cruz
+      </h3>
+      <span class="text-[#888] text-[16px] block mb-[8px]">OFW</span>
+
+      <!-- Rating -->
+      <div class="rating-box flex items-center justify-center gap-[10px] mb-[15px]">
+        <div class="star-rating flex flex-row-reverse">
+
+          <input type="radio" id="c1-s5" name="rating1" value="5" class="hidden" checked>
+          <label for="c1-s5" class="text-[24px] text-gray-300 cursor-pointer">★</label>
+
+          <input type="radio" id="c1-s4" name="rating1" value="4" class="hidden">
+          <label for="c1-s4" class="text-[24px] text-gray-300 cursor-pointer">★</label>
+
+          <input type="radio" id="c1-s3" name="rating1" value="3" class="hidden">
+          <label for="c1-s3" class="text-[24px] text-gray-300 cursor-pointer">★</label>
+
+          <input type="radio" id="c1-s2" name="rating1" value="2" class="hidden">
+          <label for="c1-s2" class="text-[24px] text-gray-300 cursor-pointer">★</label>
+
+          <input type="radio" id="c1-s1" name="rating1" value="1" class="hidden">
+          <label for="c1-s1" class="text-[24px] text-gray-300 cursor-pointer">★</label>
+
         </div>
-        <div class="card-content">
-          <h3>Maria Santos</h3>
-          <span class="role">Small Business Owner</span>
-          <div class="rating-box">
-            <div class="star-rating">
-              <input type="radio" id="c2-s5" name="rating2" value="5" checked><label for="c2-s5">★</label>
-              <input type="radio" id="c2-s4" name="rating2" value="4" checked><label for="c2-s4">★</label>
-              <input type="radio" id="c2-s3" name="rating2" value="3" check><label for="c2-s3">★</label>
-              <input type="radio" id="c2-s2" name="rating2" value="2" checked><label for="c2-s2">★</label>
-              <input type="radio" id="c2-s1" name="rating2" value="1" checked><label for="c2-s1">★</label>
-            </div>
-            <span class="rating-num">1.0</span>
-          </div>
-          <p class="quote-text">
-            Rural Bank of Paete has been my trusted partner in growing my sari-sari store. Their loan process is fast, and the staff treats me like family.
-          </p>
-        </div>
+
+        <span class="rating-num inline-block min-w-[30px] font-bold text-[#777]">
+          5.0
+        </span>
       </div>
 
-      <div class="testimonial-card">
-        <div class="avatar">
-          <img src="./images/maria.png" alt="Angela">
-        </div>
-        <div class="card-content">
-          <h3>Angela Reyes</h3>
-          <span class="role">Teacher</span>
-          <div class="rating-box">
-            <div class="star-rating">
-              <input type="radio" id="c3-s5" name="rating3" value="5" checked><label for="c3-s5">★</label>
-              <input type="radio" id="c3-s4" name="rating3" value="4" checked><label for="c3-s4">★</label>
-              <input type="radio" id="c3-s3" name="rating3" value="3" checked><label for="c3-s3">★</label>
-              <input type="radio" id="c3-s2" name="rating3" value="2" checked><label for="c3-s2">★</label>
-              <input type="radio" id="c3-s1" name="rating3" value="1" checked><label for="c3-s1">★</label>
-            </div>
-            <span class="rating-num">1.0</span>
-          </div>
-          <p class="quote-text">
-            I opened my first savings account here, and I've never looked back. They not only help me save but also guide me in reaching my financial goals.
-          </p>
-        </div>
-      </div>
+      <p class="text-[#444] text-[15px] leading-[1.6]">
+        Even while I'm working abroad, I can easily manage my savings and send money to my family.
+      </p>
     </div>
-  </section>
+
+    <!-- CARD 2 -->
+    <div class="bg-white w-[320px] rounded-[20px] relative 
+                shadow-[0_0_25px_rgba(0,174,239,0.2)] 
+                border border-[rgba(0,174,239,0.1)] 
+                pt-[60px] pb-[30px] px-[20px]
+                 transition-all duration-300 ease-in-out
+            hover:-translate-y-[10px]
+            hover:shadow-[0_15px_40px_rgba(0,174,239,0.35)]
+            hover:scale-[1.02]">
+
+      <div class="w-[100px] h-[100px] rounded-full bg-[#89cff0] 
+                  border-[3px] border-[#0d3f78]
+                  absolute top-[-50px] left-1/2 -translate-x-1/2
+                  overflow-hidden flex items-center justify-center">
+        <img src="./images/maria.png" class="w-full">
+      </div>
+
+      <h3 class="text-[#0d3f78] text-[24px] font-extrabold mt-[10px] mb-[5px]">
+        Maria Santos
+      </h3>
+      <span class="text-[#888] text-[16px] block mb-[8px]">Small Business Owner</span>
+
+      <div class="rating-box flex items-center justify-center gap-[10px] mb-[15px]">
+        <div class="star-rating flex flex-row-reverse">
+
+          <input type="radio" id="c2-s5" name="rating2" value="5" class="hidden">
+          <label for="c2-s5" class="text-[24px] text-gray-300 cursor-pointer">★</label>
+
+          <input type="radio" id="c2-s4" name="rating2" value="4" class="hidden">
+          <label for="c2-s4" class="text-[24px] text-gray-300 cursor-pointer">★</label>
+
+          <input type="radio" id="c2-s3" name="rating2" value="3" class="hidden">
+          <label for="c2-s3" class="text-[24px] text-gray-300 cursor-pointer">★</label>
+
+          <input type="radio" id="c2-s2" name="rating2" value="2" class="hidden">
+          <label for="c2-s2" class="text-[24px] text-gray-300 cursor-pointer">★</label>
+
+          <input type="radio" id="c2-s1" name="rating2" value="1" class="hidden" checked>
+          <label for="c2-s1" class="text-[24px] text-gray-300 cursor-pointer">★</label>
+
+        </div>
+
+        <span class="rating-num inline-block min-w-[30px] font-bold text-[#777]">
+          1.0
+        </span>
+      </div>
+
+      <p class="text-[#444] text-[15px] leading-[1.6]">
+        Rural Bank of Paete has been my trusted partner in growing my sari-sari store.
+      </p>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="bg-white w-[320px] rounded-[20px] relative 
+                shadow-[0_0_25px_rgba(0,174,239,0.2)] 
+                border border-[rgba(0,174,239,0.1)] 
+                pt-[60px] pb-[30px] px-[20px]
+                 transition-all duration-300 ease-in-out
+            hover:-translate-y-[10px]
+            hover:shadow-[0_15px_40px_rgba(0,174,239,0.35)]
+            hover:scale-[1.02]">
+
+      <div class="w-[100px] h-[100px] rounded-full bg-[#89cff0] 
+                  border-[3px] border-[#0d3f78]
+                  absolute top-[-50px] left-1/2 -translate-x-1/2
+                  overflow-hidden flex items-center justify-center">
+        <img src="./images/maria.png" class="w-full">
+      </div>
+
+      <h3 class="text-[#0d3f78] text-[24px] font-extrabold mt-[10px] mb-[5px]">
+        Angela Reyes
+      </h3>
+      <span class="text-[#888] text-[16px] block mb-[8px]">Teacher</span>
+
+      <div class="rating-box flex items-center justify-center gap-[10px] mb-[15px]">
+        <div class="star-rating flex flex-row-reverse">
+
+          <input type="radio" id="c3-s5" name="rating3" value="5" class="hidden">
+          <label for="c3-s5" class="text-[24px] text-gray-300 cursor-pointer">★</label>
+
+          <input type="radio" id="c3-s4" name="rating3" value="4" class="hidden">
+          <label for="c3-s4" class="text-[24px] text-gray-300 cursor-pointer">★</label>
+
+          <input type="radio" id="c3-s3" name="rating3" value="3" class="hidden">
+          <label for="c3-s3" class="text-[24px] text-gray-300 cursor-pointer">★</label>
+
+          <input type="radio" id="c3-s2" name="rating3" value="2" class="hidden">
+          <label for="c3-s2" class="text-[24px] text-gray-300 cursor-pointer">★</label>
+
+          <input type="radio" id="c3-s1" name="rating3" value="1" class="hidden" checked>
+          <label for="c3-s1" class="text-[24px] text-gray-300 cursor-pointer">★</label>
+
+        </div>
+
+        <span class="rating-num inline-block min-w-[30px] font-bold text-[#777]">
+          1.0
+        </span>
+      </div>
+
+      <p class="text-[#444] text-[15px] leading-[1.6]">
+        I opened my first savings account here and they helped me reach my goals.
+      </p>
+    </div>
+
+  </div>
+</section>
 
   <!-- ================= CONTACT ================= -->
   <section class="contact-section" id="contact-us">
