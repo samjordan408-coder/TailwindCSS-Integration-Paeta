@@ -911,58 +911,92 @@
   <!-- Header -->
   <div class="bg-[#0d3f78] text-white text-center py-6 mb-12">
     <h1 class="text-3xl">Contact Us</h1>
-    </div>
-    <div class="contact-content-wrapper">
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Email Address">
-        <input type="text" placeholder="Subject">
-        <textarea placeholder="Message"></textarea>
-        <button type="submit" class="btn-send">Send Message</button>
-      </form>
-      <div class="contact-info-area">
-        <h2 class="info-title">Get In Touch</h2>
-        <p class="info-subtext">Have questions or need assistance? Our friendly team is ready to help, reach out to us today!</p>
-        <div class="contact-grid">
-          <div class="contact-item">
-            <img src="./images/contact.png" alt="Phone" class="item-icon">
-            <div class="item-text">
-              <h3>Call Us</h3>
-              <p>(049) 557 0006</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <img src="./images/email.png" alt="Email" class="item-icon">
-            <div class="item-text">
-              <h3>Email Us</h3>
-              <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3446564455514051050d0203745359555d581a575b59">[email&#160;protected]</a></p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <img src="./images/web.png" alt="Web" class="item-icon">
-            <div class="item-text">
-              <h3>Website</h3>
-              <p>www.paetebank.ph</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <img src="./images/address.png" alt="Location" class="item-icon">
-            <div class="item-text">
-              <h3>Address</h3>
-              <p>J. Rizal corner J.V. Quesada Streets, Brgy. Ilaya del Sur, Paete, Laguna, 4016</p>
-            </div>
+  </div>
+
+  <!-- Content -->
+  <div class="max-w-6xl mx-auto flex gap-20 px-10">
+
+    <!-- Form -->
+    <form class="flex-1">
+      <input type="text" placeholder="Your Name"
+        class="w-full p-3 mb-4 border-2 border-[#b2ebf2] rounded-xl bg-[#e0f7fa] text-black text-base"/>
+
+      <input type="email" placeholder="Email Address"
+        class="w-full p-3 mb-4 border-2 border-[#b2ebf2] rounded-xl bg-[#e0f7fa] text-black text-base"/>
+
+      <input type="text" placeholder="Subject"
+        class="w-full p-3 mb-4 border-2 border-[#b2ebf2] rounded-xl bg-[#e0f7fa] text-black text-base"/>
+
+      <textarea placeholder="Message"
+        class="w-full p-3 mb-4 h-[200px] resize-none border-2 border-[#b2ebf2] rounded-xl bg-[#e0f7fa] text-black text-base"></textarea>
+
+      <button type="submit"
+        class="bg-[#00aeef] text-white px-8 py-3 rounded-lg font-bold text-base cursor-pointer">
+        Send Message
+      </button>
+    </form>
+
+    <!-- Info -->
+    <div class="flex-[1.2] text-[#00aeef]">
+
+      <h2 class="text-2xl mb-1">Get In Touch</h2>
+      <p class="text-sm text-[#4dd0e1] leading-relaxed mb-8">
+        Have questions or need assistance? Our friendly team is ready to help, reach out to us today!
+      </p>
+
+      <!-- Grid -->
+      <div class="grid grid-cols-2 gap-8">
+
+        <!-- Item -->
+        <div class="flex gap-4 items-start">
+          <img src="./images/contact.png" class="w-[45px]" />
+          <div>
+            <h3 class="text-xl">Call Us</h3>
+            <p class="text-sm text-[#4dd0e1]">(049) 557 0006</p>
           </div>
         </div>
-        <div class="social-box">
-          <h3>Follow Us On</h3>
-          <div class="social-icons">
-            <a href="#"><img src="./images/FB.png" alt="Facebook"></a>
-            <a href="#"><img src="./images/X.png" alt="X"></a>
+
+        <div class="flex gap-4 items-start">
+          <img src="./images/email.png" class="w-[45px]" />
+          <div>
+            <h3 class="text-xl">Email Us</h3>
+            <p class="text-sm text-[#4dd0e1]">[email protected]</p>
           </div>
+        </div>
+
+        <div class="flex gap-4 items-start">
+          <img src="./images/web.png" class="w-[45px]" />
+          <div>
+            <h3 class="text-xl">Website</h3>
+            <p class="text-sm text-[#4dd0e1]">www.paetebank.ph</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-start">
+          <img src="./images/address.png" class="w-[45px]" />
+          <div>
+            <h3 class="text-xl">Address</h3>
+            <p class="text-sm text-[#4dd0e1]">
+              J. Rizal corner J.V. Quesada Streets, Brgy. Ilaya del Sur, Paete, Laguna, 4016
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Social -->
+      <div class="mt-8">
+        <h3 class="text-lg mb-3">Follow Us On</h3>
+        <div class="flex gap-4">
+          <a href="#"><img src="./images/FB.png" class="w-8" /></a>
+          <a href="#"><img src="./images/X.png" class="w-8" /></a>
         </div>
       </div>
+
     </div>
-  </section>
+  </div>
+
+</section>
 
     <!-- Brand -->
     <div class="flex-[2.5] min-w-[150px]">
