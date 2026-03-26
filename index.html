@@ -1010,66 +1010,98 @@
     referrerpolicy="no-referrer-when-downgrade">
   </iframe>
 </section>
+ <!-- FOOTER -->
+<footer class="bg-[#00aeef] text-white py-[60px] px-[5%] font-sans">
+  <div class="max-w-[1200px] mx-auto flex justify-between items-start flex-wrap gap-[30px]">
 
-  <footer class="main-footer">
-    <div class="footer-container">
-      <div class="footer-column brand-col">
-        <h2 class="footer-logo">Rural Bank of Paete Inc.</h2>
-        <p class="tagline">Maniguro, Magbangko, Umasenso</p>
-        <div class="feedback-section">
-          <h3>Feedback</h3>
-          <form class="feedback-form">
-            <div class="form-left">
-              <input type="text" placeholder="Your Name">
-              <input type="text" placeholder="Occupation">
-            </div>
-            <div class="form-right">
-              <textarea placeholder="Feedback"></textarea>
-              <button type="submit" class="send-btn">Send</button>
-            </div>
-          </form>
-        </div>
-      </div>
+    <!-- Brand -->
+    <div class="flex-[2.5] min-w-[150px]">
+      <h2 class="text-[32px] font-extrabold m-0">Rural Bank of Paete Inc.</h2>
+      <p class="text-[18px] mt-[5px] mb-[30px] opacity-90">
+        Maniguro, Magbangko, Umasenso
+      </p>
 
-      <div class="footer-column">
-        <h3>Navigation</h3>
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact-us">Contact Us</a></li>
-        </ul>
-      </div>
+      <!-- Feedback -->
+      <div class="max-w-[800px]">
+        <h3 class="text-[24px] font-bold mb-[15px]">Feedback</h3>
 
-      <div class="footer-column">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#what-we-offer">What We Offer</a></li>
-          <li><a href="#loans">Loan Services</a></li>
-          <li><a href="#news-updates">News & Updates</a></li>
-        </ul>
-      </div>
+        <form class="flex gap-[15px]">
+          
+          <!-- Left -->
+          <div class="flex flex-col gap-[12px] flex-1">
+            <input type="text" placeholder="Your Name"
+              class="w-[380px] h-[50px] px-[20px] py-[15px] rounded-[10px] text-[16px] outline-none text-gray-800 bg-white" />
+            
+            <input type="text" placeholder="Occupation"
+              class="w-[380px] h-[50px] px-[20px] py-[15px] rounded-[10px] text-[16px] outline-none text-gray-800 bg-white" />
+          </div>
 
-      <div class="footer-column hide-mobile">
-        <h3>&nbsp;</h3>
-        <ul>
-          <li><a href="#mobile-banking">Mobile Banking</a></li>
-          <li><a href="#security-trust">Security & Trust</a></li>
-          <li><a href="#why-us">Why Choose Us?</a></li>
-        </ul>
-      </div>
+          <!-- Right -->
+          <div class="relative flex-[1.6]">
+            <textarea placeholder="Feedback"
+              class="w-[380px] h-[112px] px-[20px] py-[15px] rounded-[10px] text-[16px] outline-none text-gray-800 bg-white"></textarea>
 
-      <div class="footer-column">
-        <h3>Services</h3>
-        <ul>
-          <li><a href="#">Bancnet - POS (Point of Sale) - Cash Out</a></li>
-        </ul>
+            <button type="submit"
+              class="absolute bottom-[10px] right-[10px] bg-[#00aeef] text-white px-[25px] py-[8px] rounded-[12px] font-bold text-[14px] transition hover:bg-[#008dba] hover:scale-105">
+              Send
+            </button>
+          </div>
+
+        </form>
       </div>
     </div>
-  </footer>
 
-  <div class="footer-bottom">
-    <p>&copy; 2025 Rural Bank of Paete Inc. - All Rights Reserved</p>
+    <!-- Navigation -->
+    <div class="flex-1 min-w-[150px]">
+      <h3 class="text-[22px] font-bold mb-[20px]">Navigation</h3>
+      <ul class="list-none p-0 m-0">
+        <li class="mb-[12px]"><a href="#hero" class="text-white text-[16px] hover:opacity-70">Home</a></li>
+        <li class="mb-[12px]"><a href="#about" class="text-white text-[16px] hover:opacity-70">About Us</a></li>
+        <li class="mb-[12px]"><a href="#contact-us" class="text-white text-[16px] hover:opacity-70">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="flex-1 min-w-[150px]">
+      <h3 class="text-[22px] font-bold mb-[20px]">Quick Links</h3>
+      <ul class="list-none p-0 m-0">
+        <li class="mb-[12px]"><a href="#what-we-offer" class="text-white text-[16px] hover:opacity-70">What We Offer</a></li>
+        <li class="mb-[12px]"><a href="#loans" class="text-white text-[16px] hover:opacity-70">Loan Services</a></li>
+        <li class="mb-[12px]"><a href="#news-updates" class="text-white text-[16px] hover:opacity-70">News & Updates</a></li>
+      </ul>
+    </div>
+
+    <!-- Extra -->
+    <div class="flex-1 min-w-[150px] hidden md:block">
+      <h3 class="text-[22px] font-bold mb-[20px]">&nbsp;</h3>
+      <ul class="list-none p-0 m-0">
+        <li class="mb-[12px]"><a href="#mobile-banking" class="text-white text-[16px] hover:opacity-70">Mobile Banking</a></li>
+        <li class="mb-[12px]"><a href="#security-trust" class="text-white text-[16px] hover:opacity-70">Security & Trust</a></li>
+        <li class="mb-[12px]"><a href="#why-us" class="text-white text-[16px] hover:opacity-70">Why Choose Us?</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="flex-1 min-w-[150px]">
+      <h3 class="text-[22px] font-bold mb-[20px]">Services</h3>
+      <ul class="list-none p-0 m-0">
+        <li class="mb-[12px]">
+          <a href="#" class="text-white text-[16px] hover:opacity-70">
+            Bancnet - POS (Point of Sale) - Cash Out
+          </a>
+        </li>
+      </ul>
+    </div>
+
   </div>
+</footer>
+
+<!-- Bottom -->
+<div class="bg-[#f4fdff] text-center py-[15px]">
+  <p class="text-[#00aeef] text-[14px] m-0">
+    &copy; 2025 Rural Bank of Paete Inc. - All Rights Reserved
+  </p>
+</div>
 
   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   <script src="src/script.js"></script>
