@@ -1,0 +1,175 @@
+{
+  "tag": "navbar",
+  "id": "scroll-nav",
+  "attributes": {
+    "class": "fixed top-0 left-0 right-0 z-[200] bg-white shadow-lg -translate-y-full opacity-0 pointer-events-none transition-all duration-300 ease-in-out",
+    "aria-label": "Sticky navigation"
+  },
+  "children": [
+    {
+      "tag": "div",
+      "attributes": {
+        "class": "max-w-[1200px] mx-auto px-6 py-2 flex items-center justify-between gap-3"
+      },
+      "children": [
+        {
+          "tag": "a",
+          "attributes": {
+            "href": "#hero",
+            "class": "flex items-center gap-2"
+          },
+          "children": [
+            {
+              "tag": "img",
+              "attributes": {
+                "src": "./images/logo.png",
+                "alt": "Rural Bank of Paete",
+                "class": "h-10 w-10 rounded-full object-contain bg-blue-400/10"
+              }
+            },
+            {
+              "tag": "div",
+              "attributes": {
+                "class": "flex flex-col leading-tight"
+              },
+              "children": [
+                {
+                  "tag": "span",
+                  "attributes": {
+                    "class": "font-bold text-[0.75rem] text-[#0d3b66]"
+                  },
+                  "text": "Rural Bank of"
+                },
+                {
+                  "tag": "span",
+                  "attributes": {
+                    "class": "font-bold text-[0.85rem] text-[#0d3b66]"
+                  },
+                  "text": "Paete Inc."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "button",
+          "attributes": {
+            "class": "w-10 h-10 rounded-full border-[1.5px] border-[#0d3b66]/70 flex flex-col items-center justify-center gap-1.5 cursor-pointer hover:bg-slate-50 transition-colors",
+            "type": "button",
+            "onclick": "toggleMenu()"
+          },
+          "children": [
+            {
+              "tag": "span",
+              "attributes": {
+                "class": "w-5 h-[2px] rounded-full bg-[#0d3b66]"
+              }
+            },
+            {
+              "tag": "span",
+              "attributes": {
+                "class": "w-5 h-[2px] rounded-full bg-[#0d3b66]"
+              }
+            },
+            {
+              "tag": "span",
+              "attributes": {
+                "class": "w-5 h-[2px] rounded-full bg-[#0d3b66]"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "ul",
+      "id": "side-menu",
+      "attributes": {
+        "class": "fixed top-0 right-0 h-screen w-80 max-w-[80vw] p-6 pt-20 bg-white shadow-2xl flex flex-col gap-4 translate-x-full transition-transform duration-300 ease-in-out z-[201]"
+      },
+      "children": [
+        {
+          "tag": "li",
+          "attributes": {
+            "class": "absolute top-6 right-6 list-none"
+          },
+          "children": [
+            {
+              "tag": "button",
+              "attributes": {
+                "class": "w-10 h-10 rounded-full bg-slate-100 text-[#0d3b66] text-3xl flex items-center justify-center cursor-pointer hover:bg-slate-200",
+                "onclick": "toggleMenu()"
+              },
+              "text": "×"
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "attributes": {
+            "class": "border-b border-slate-100 pb-2"
+          },
+          "children": [
+            {
+              "tag": "a",
+              "attributes": {
+                "href": "#about",
+                "class": "text-[#0d3b66] font-bold text-lg",
+                "onclick": "toggleMenu()"
+              },
+              "text": "About Us"
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "attributes": {
+            "class": "border-b border-slate-100 pb-2"
+          },
+          "children": [
+            {
+              "tag": "a",
+              "attributes": {
+                "href": "#loans",
+                "class": "text-[#0d3b66] font-bold text-lg",
+                "onclick": "toggleMenu()"
+              },
+              "text": "Loan Services"
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "attributes": {
+            "class": "border-b border-slate-100 pb-2"
+          },
+          "children": [
+            {
+              "tag": "a",
+              "attributes": {
+                "href": "#news-updates",
+                "class": "text-[#0d3b66] font-bold text-lg",
+                "onclick": "toggleMenu()"
+              },
+              "text": "News & Updates"
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attributes": {
+                "href": "#contact",
+                "class": "text-[#0d3b66] font-bold text-lg",
+                "onclick": "toggleMenu()"
+              },
+              "text": "Contact Us"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
