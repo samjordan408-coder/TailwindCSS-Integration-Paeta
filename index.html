@@ -138,79 +138,10 @@
 </section>
 
 <!-- Account types carousel -->
- <section class="bg-white px-6 pb-12 pt-[220px] relative z-10" id="offer">
-  <div class="max-w-[1200px] mx-auto -mt-[300px] relative flex items-center justify-center gap-4">
-    
-    <button id="prevBtn" type="button" aria-label="Previous cards" 
-            class="hidden lg:flex shrink-0 w-[42px] h-[42px] rounded-[10px] bg-sky-400 text-white items-center justify-center hover:bg-sky-500 transition-colors duration-200 shadow-md">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M15 18l-6-6 6-6"/>
-      </svg>
-    </button>
-
-    <div id="cardTrack" class="flex flex-1 min-w-0 gap-5 overflow-x-auto snap-x snap-mandatory py-2 no-scrollbar scroll-smooth">
-      
-      <article class="flex-1 min-w-[260px] md:min-w-[280px] bg-white snap-start rounded-xl p-4 flex flex-col min-h-[200px] border-[1.5px] border-sky-400/25 shadow-[0_8px_32px_rgba(8,179,229,0.18),0_2px_8px_rgba(0,0,0,0.1)] transition-all duration-200 hover:-translate-y-1 hover:border-sky-400/60 hover:shadow-[0_12px_40px_rgba(8,179,229,0.35),0_4px_12px_rgba(0,0,0,0.12)]">
-        <div class="w-12 h-12 mb-2.5 mx-auto flex items-center justify-center bg-sky-50 rounded-lg shrink-0">
-          <img src="./images/icon1.png" alt="Regular Savings Icon" class="w-full h-full object-contain p-1.5">
-        </div>
-        <h3 class="text-[0.95rem] font-bold text-sky-500 mb-1.5 text-center">Regular Savings</h3>
-        <p class="text-[0.78rem] text-slate-500 flex-1 leading-relaxed text-center">
-          A deposit account that earns interest and allows you to save for your goals with ease and security.
-        </p>
-        <a href="#regular-savings" class="block w-full mt-3 py-1.5 px-4 bg-sky-500 text-white text-[0.78rem] font-semibold text-center rounded-md hover:bg-slate-900 transition-colors">
-          Learn more...
-        </a>
-      </article>
-
-      <article class="flex-1 min-w-[260px] md:min-w-[280px] bg-white snap-start rounded-xl p-4 flex flex-col min-h-[200px] border-[1.5px] border-sky-400/25 shadow-[0_8px_32px_rgba(8,179,229,0.18),0_2px_8px_rgba(0,0,0,0.1)] transition-all duration-200 hover:-translate-y-1 hover:border-sky-400/60 hover:shadow-[0_12px_40px_rgba(8,179,229,0.35),0_4px_12px_rgba(0,0,0,0.12)]">
-        <div class="w-12 h-12 mb-2.5 mx-auto flex items-center justify-center bg-sky-50 rounded-lg shrink-0">
-          <img src="./images/icon2.png" alt="Basic Deposit Icon" class="w-full h-full object-contain p-1.5">
-        </div>
-        <h3 class="text-[0.95rem] font-bold text-sky-500 mb-1.5 text-center">Basic Deposit Account</h3>
-        <p class="text-[0.78rem] text-slate-500 flex-1 leading-relaxed text-center">
-          A simplified savings account designed for the unbanked and those who want straightforward banking.
-        </p>
-        <a href="#basic-deposit" class="block w-full mt-3 py-1.5 px-4 bg-sky-500 text-white text-[0.78rem] font-semibold text-center rounded-md hover:bg-slate-900 transition-colors">
-          Learn more...
-        </a>
-      </article>
-
-      <article class="flex-1 min-w-[260px] md:min-w-[280px] bg-white snap-start rounded-xl p-4 flex flex-col min-h-[200px] border-[1.5px] border-sky-400/25 shadow-[0_8px_32px_rgba(8,179,229,0.18),0_2px_8px_rgba(0,0,0,0.1)] transition-all duration-200 hover:-translate-y-1 hover:border-sky-400/60 hover:shadow-[0_12px_40px_rgba(8,179,229,0.35),0_4px_12px_rgba(0,0,0,0.12)]">
-        <div class="w-12 h-12 mb-2.5 mx-auto flex items-center justify-center bg-sky-50 rounded-lg shrink-0">
-          <img src="./images/icon3.png" alt="Time Deposit Icon" class="w-full h-full object-contain p-1.5">
-        </div>
-        <h3 class="text-[0.95rem] font-bold text-sky-500 mb-1.5 text-center">Time Deposit Account</h3>
-        <p class="text-[0.78rem] text-slate-500 flex-1 leading-relaxed text-center">
-          A deposit account where funds are locked in for a set term to earn higher interest rates.
-        </p>
-        <a href="#time-deposit" class="block w-full mt-3 py-1.5 px-4 bg-sky-500 text-white text-[0.78rem] font-semibold text-center rounded-md hover:bg-slate-900 transition-colors">
-          Learn more...
-        </a>
-      </article>
-
-      <article class="flex-1 min-w-[260px] md:min-w-[280px] bg-white snap-start rounded-xl p-4 flex flex-col min-h-[200px] border-[1.5px] border-sky-400/25 shadow-[0_8px_32px_rgba(8,179,229,0.18),0_2px_8px_rgba(0,0,0,0.1)] transition-all duration-200 hover:-translate-y-1 hover:border-sky-400/60 hover:shadow-[0_12px_40px_rgba(8,179,229,0.35),0_4px_12px_rgba(0,0,0,0.12)]">
-        <div class="w-12 h-12 mb-2.5 mx-auto flex items-center justify-center bg-sky-50 rounded-lg shrink-0">
-          <img src="./images/icon4.png" alt="Checking Account Icon" class="w-full h-full object-contain p-1.5">
-        </div>
-        <h3 class="text-[0.95rem] font-bold text-sky-500 mb-1.5 text-center">Checking Account</h3>
-        <p class="text-[0.78rem] text-slate-500 flex-1 leading-relaxed text-center">
-          A deposit account that allows the account holder to issue checks for payments and transactions.
-        </p>
-        <a href="#checking" class="block w-full mt-3 py-1.5 px-4 bg-sky-500 text-white text-[0.78rem] font-semibold text-center rounded-md hover:bg-slate-900 transition-colors">
-          Learn more...
-        </a>
-      </article>
-
-    </div>
-
-    <button id="nextBtn" type="button" aria-label="Next cards" 
-            class="hidden lg:flex shrink-0 w-[42px] h-[42px] rounded-[10px] bg-sky-400 text-white items-center justify-center hover:bg-sky-500 transition-colors duration-200 shadow-md">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M9 18l6-6-6-6"/>
-      </svg>
-    </button>
-  </div>
+<section class="bg-white px-6 pb-12 pt-[220px] relative z-10" id="account_types">
+  <button id="prevBtn" ...>...</button>
+  <div id="cardTrack" class="flex overflow-x-auto snap-x gap-5"></div>
+  <button id="nextBtn" ...>...</button>
 </section>
 
   <!-- What We Offer section -->
@@ -1058,8 +989,7 @@
     &copy; 2025 Rural Bank of Paete Inc. - All Rights Reserved
   </p>
 </div>
-<script type="module"src="./apps.js"></script>
-<script type="module" src="./nav.js"></script>
+<script type="module" src="JS/apps.js"></script>
   <script src="src/script.js"></script>
 </body>
 </html>

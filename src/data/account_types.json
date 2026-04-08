@@ -1,0 +1,34 @@
+[
+  {
+    "id": "regular-savings",
+    "icon": "./images/icon1.png",
+    "alt": "Regular Savings Icon",
+    "title": "Regular Savings",
+    "description": "A deposit account that earns interest and allows you to save for your goals with ease and security.",
+    "link": "#regular-savings"
+  },
+  {
+    "id": "basic-deposit",
+    "icon": "./images/icon2.png",
+    "alt": "Basic Deposit Icon",
+    "title": "Basic Deposit Account",
+    "description": "A simplified savings account designed for the unbanked and those who want straightforward banking.",
+    "link": "#basic-deposit"
+  },
+  {
+    "id": "time-deposit",
+    "icon": "./images/icon3.png",
+    "alt": "Time Deposit Icon",
+    "title": "Time Deposit Account",
+    "description": "A deposit account where funds are locked in for a set term to earn higher interest rates.",
+    "link": "#time-deposit"
+  },
+  {
+    "id": "checking",
+    "icon": "./images/icon4.png",
+    "alt": "Checking Account Icon",
+    "title": "Checking Account",
+    "description": "A deposit account that allows the account holder to issue checks for payments and transactions.",
+    "link": "#checking"
+  }
+]
