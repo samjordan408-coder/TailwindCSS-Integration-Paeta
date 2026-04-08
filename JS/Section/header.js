@@ -23,7 +23,6 @@ const renderHeader = (data) => {
   const { logo, titleTop, titleBottom, links = [], search, login } = data;
   const container = document.getElementById("header");
   if (!container) return; // safety
-
   container.innerHTML = `
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
 

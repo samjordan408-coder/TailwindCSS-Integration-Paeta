@@ -1,5 +1,4 @@
 import { loadAccountTypes } from "./Section/account_types.js";
-
 import { loadHeader } from "./Section/header.js";
 
 document.addEventListener("DOMContentLoaded", () => {
