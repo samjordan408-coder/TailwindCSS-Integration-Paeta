@@ -1,0 +1,19 @@
+{
+  "logo": "./images/logo.png",
+  "titleTop": "Rural Bank of",
+  "titleBottom": "Paete Inc.",
+
+  "search": {
+    "placeholder": "Search..."
+  },
+
+  "links": [
+    { "name": "About Us", "url": "#about" },
+    { "name": "Contact Us", "url": "#contact-us" }
+  ],
+
+  "login": {
+    "text": "Log In",
+    "url": "#login"
+  }
+}

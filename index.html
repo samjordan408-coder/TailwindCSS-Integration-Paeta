@@ -13,52 +13,9 @@
 </head>
 <body>
   <!-- Header: single blue bar. Put your logo image in assets/header-logo.png -->
-  <header class="bg-[#08B3E5] text-white shadow-md">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
-    
-    <a href="index.html" class="flex items-center gap-3 shrink-0">
-      <img src="./images/logo.png" alt="Rural Bank of Paete" class="h-10 w-auto">
-      <div class="flex flex-col leading-tigh">
-        <span class="text-[10px] uppercase tracking-wider opacity-80 font-medium">Rural Bank of</span>
-        <span class="text-lg font-bold">Paete Inc.</span>
-      </div>
-    </a>
-
-    <div class="hidden md:flex relative flex-1 max-w-sm mx-8">
-      <input 
-        type="search" 
-        placeholder="Search..." 
-        class="w-full bg-white border border-white/20 rounded-full py-1.5 pl-4 pr-10 text-sm focus:outline-none focus:bg-white focus:text-gray-900 transition-all placeholder-black"
-        aria-label="Search"
-      >
-      <button type="button" class="absolute right-3 top-1/2 -translate-y-1/2 text-black hover:text-white" aria-label="Search">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
-        </svg>
-      </button>
-    </div>
-
-    <div class="hidden sm:flex items-center gap-8 text-lg font-bold">
-  <a href="#about" 
-     class="text-white hover:text-[#ffca08] transition-all duration-300 transform hover:scale-105">
-     About Us
-  </a>
-  <a href="#contact-us" 
-     class="text-white hover:text-[#ffca08] transition-all duration-300 transform hover:scale-105">
-     Contact Us
-  </a>
-</div>
-
-      <a 
-        href="#login" 
-        class="bg-white text-[#003366] px-5 py-2 rounded font-bold text-sm hover:bg-blue-50 transition-colors"
-      >
-        Log In
-      </a>
-    </nav>
-
-  </div>
+  <header class="bg-[#08B3E5] text-white shadow-md" id ="header">
 </header>
+
 
   <!-- Secondary nav (optional) -->
   <nav class="bg-slate-100/95 py-2.5 px-6">
@@ -1101,8 +1058,7 @@
     &copy; 2025 Rural Bank of Paete Inc. - All Rights Reserved
   </p>
 </div>
-
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script type="module"src="./apps.js"></script>
   <script src="src/script.js"></script>
 </body>
 </html>
