@@ -1,0 +1,36 @@
+{
+  "id": "loans",
+  "class": "bg-cover bg-top bg-repeat-y py-12",
+  "background": "./images/about us bg.jpg",
+
+  "title": {
+    "text": "Loan Services",
+    "class": "bg-[#0d3f78] text-white px-7 py-2 rounded-full font-bold text-xl text-center w-fit mx-auto mb-8 shadow-md"
+  },
+
+  "image": "./images/loan.png",
+
+  "content": {
+    "heading": "Whether you're growing your farm, starting a business, or facing an emergency, we have a loan for you.",
+
+    "features": [
+      "Competitive interest rates",
+      "Fast approval process",
+      "Friendly, local service",
+      "Flexible payment terms"
+    ],
+
+    "buttons": [
+      {
+        "text": "Check loan requirements",
+        "link": "#what-we-offer",
+        "class": "bg-white border-2 border-[#00aeef] text-[#00aeef] hover:bg-[#d1effa] hover:border-[#0d3f78] hover:text-[#0d3f78]"
+      },
+      {
+        "text": "Apply for loan now",
+        "link": "#contact-us",
+        "class": "bg-[#0d3f78] border-2 border-[#0d3f78] text-white hover:bg-[#00aeef] hover:border-[#00aeef]"
+      }
+    ]
+  }
+}
