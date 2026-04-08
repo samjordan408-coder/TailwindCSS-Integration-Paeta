@@ -1,7 +1,7 @@
 {
   "id": "loans",
   "class": "bg-cover bg-top bg-repeat-y py-12",
-  "background": "./images/about us bg.jpg",
+  "background": "./images/loan bg.jpg",
 
   "title": {
     "text": "Loan Services",

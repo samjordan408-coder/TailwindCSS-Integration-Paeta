@@ -34,7 +34,7 @@ const renderLoans = (data) => {
 
           <!-- IMAGE -->
           <div class="flex items-center justify-center">
-            <img src="${data.image}" class="w-full max-h-[260px] object-contain">
+            <img src="${data.image}" class="w-full max-h-[460px] object-contain">
           </div>
 
           <!-- DIVIDER -->
