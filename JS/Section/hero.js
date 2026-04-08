@@ -22,61 +22,65 @@ const renderHero = (data) => {
   const container = document.getElementById(data.id);
   if (!container) return;
 
-  const { background, container: layout, imageBlock, content } = data;
+  const { background, imageBlock, content } = data;
 
   container.innerHTML = `
-    <section id="${data.id}" class="${data.class}">
+    <section id="${data.id}" class="relative w-full h-screen overflow-hidden">
 
       <!-- BACKGROUND -->
       <div 
-        class="${background.class}"
+        class="absolute inset-0 bg-cover bg-center"
         style="background-image: url('${background.image}');">
       </div>
 
-      <!-- CONTAINER -->
-      <div class="${layout.class}">
+      <!-- OVERLAY -->
+      <div class="absolute inset-0 bg-black/40"></div>
 
-        <!-- IMAGE -->
-        <div class="${imageBlock.class}">
-          <img 
-            src="${imageBlock.img.src}" 
-            alt="${imageBlock.img.alt}" 
-            class="${imageBlock.img.class}">
-        </div>
+      <!-- CONTENT WRAPPER -->
+      <div class="relative z-10 h-full max-w-6xl mx-auto px-6 flex items-center">
 
-        <!-- CONTENT -->
-        <div class="${content.class}">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full">
 
-          <!-- TITLE -->
-          <h1 class="text-white font-bold leading-[1.1] mb-6 text-[clamp(2rem,4vw,3rem)] drop-shadow-md">
-            ${content.title}
-          </h1>
+          <!-- LEFT: TEXT -->
+          <div class="text-center md:text-left">
 
-          <!-- DESCRIPTION -->
-          <p class="text-white/95 text-lg max-w-[520px] mb-6 leading-relaxed">
-            ${content.description}
-          </p>
+            <h1 class="text-white font-bold leading-tight mb-6 text-[clamp(2.2rem,4vw,3.5rem)]">
+              ${content.title}
+            </h1>
 
-          <!-- BADGE -->
-          <div class="inline-block bg-[#ffca08] text-white font-extrabold text-[1rem] md:text-[1.1rem] px-8 py-3 rounded-full mb-8 shadow-md tracking-wide">
-            ${content.badge}
+            <p class="text-white/90 text-lg max-w-[520px] mb-6 mx-auto md:mx-0 leading-relaxed">
+              ${content.description}
+            </p>
+
+            <div class="inline-block bg-[#ffca08] text-white font-extrabold text-base px-8 py-3 rounded-full mb-8 shadow-md">
+              ${content.badge}
+            </div>
+
+            <ul class="flex flex-wrap gap-3 mb-8 justify-center md:justify-start">
+              ${content.features.map(item => `
+                <li class="text-white font-semibold text-sm flex items-center">
+                  <span class="text-[#ffca08] mr-2">✓</span>
+                  ${item}
+                </li>
+              `).join("")}
+            </ul>
+
+            <a href="${content.button.url}" 
+               class="inline-block bg-[#0d3f78] text-white px-10 py-4 rounded-lg font-bold border border-white/20 hover:bg-[#0a2e58] hover:scale-105 transition">
+              ${content.button.text}
+            </a>
+
           </div>
 
-          <!-- FEATURES -->
-          <ul class="flex flex-wrap md:flex-nowrap justify-center md:justify-start gap-3 mb-8 list-none p-0">
-            ${content.features.map(item => `
-              <li class="text-white font-semibold text-[0.9rem] flex items-center">
-                <span class="text-[#ffca08] mr-2">✓</span>
-                ${item}
-              </li>
-            `).join("")}
-          </ul>
+          <!-- RIGHT: IMAGE (ALWAYS RIGHT ON DESKTOP) -->
+          <div class="flex justify-center md:justify-end order-first md:order-last">
 
-          <!-- BUTTON -->
-          <a href="${content.button.url}" 
-             class="inline-block bg-[#0d3f78] text-white px-10 py-4 rounded-lg font-bold border-2 border-white/20 transition-all duration-300 hover:bg-[#0a2e58] hover:scale-105 shadow-2xl">
-            ${content.button.text}
-          </a>
+            <img 
+              src="${imageBlock.img.src}" 
+              alt="${imageBlock.img.alt}" 
+              class="max-w-full h-auto drop-shadow-2xl">
+
+          </div>
 
         </div>
 
