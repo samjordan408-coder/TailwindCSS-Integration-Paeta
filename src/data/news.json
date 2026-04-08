@@ -1,0 +1,36 @@
+{
+  "id": "news-updates",
+  "wrapperClass": "text-center bg-[#f4f9ff] bg-cover bg-center bg-no-repeat pb-[60px] font-sans",
+  "background": "./images/news bg.png",
+
+  "title": {
+    "text": "News & Updates",
+    "class": "bg-[#0d3f78] text-white inline-block px-[60px] py-3 rounded-b-[25px] font-bold mb-[70px] text-[24px] md:text-[30px] [clip-path:polygon(0%_0%,100%_0%,90%_100%,10%_100%)]"
+  },
+
+  "cards": [
+    {
+      "date": "August 5, 2025",
+      "image": "./images/news1.png",
+      "title": "New Mobile Banking App Launched!",
+      "buttonText": "View Details"
+    },
+    {
+      "date": "July 20, 2025",
+      "image": "./images/news2.png",
+      "title": "Higher Interest Rates on Time Deposits",
+      "buttonText": "View Details"
+    },
+    {
+      "date": "July 1, 2025",
+      "image": "./images/news3.png",
+      "title": "Branch Renovation Completed",
+      "buttonText": "View Details"
+    }
+  ],
+
+  "viewAllButton": {
+    "text": "View all",
+    "class": "bg-[#28a745] text-white px-[80px] py-1.5 rounded-md mt-10 text-[20px] shadow-md"
+  }
+}

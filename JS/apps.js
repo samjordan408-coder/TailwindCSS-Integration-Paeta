@@ -5,6 +5,7 @@ import { loadHero } from "./Section/hero.js";
 import { loadAbout } from "./Section/about.js";
 import { loadTeam } from "./Section/team.js";
 import { loadLoans } from "./Section/loan.js";
+import { loadNews } from "./Section/news.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   loadHeader();       
@@ -14,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   loadAbout();
   loadTeam();
   loadLoans();
-
+  loadNews();
 
 document.addEventListener("DOMContentLoaded", () => {
   loadAccountTypes();
@@ -23,5 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   loadAbout();
   loadTeam();
   loadLoans();
+  loadNews();
+
 });
 });
