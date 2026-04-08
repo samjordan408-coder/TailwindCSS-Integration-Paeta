@@ -3,6 +3,7 @@ import { loadHeader } from "./Section/header.js";
 import { loadWhatWeOffer } from "./Section/whatweoffer.js";
 import { loadHero } from "./Section/hero.js";
 import { loadAbout } from "./Section/about.js";
+import { loadTeam } from "./Section/team.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   loadHeader();        // load header section
@@ -10,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   loadHero();
   loadWhatWeOffer();
   loadAbout();
+  loadTeam();
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -17,5 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
   loadHero();
   loadWhatWeOffer();
   loadAbout();
+  loadTeam();
 });
 });

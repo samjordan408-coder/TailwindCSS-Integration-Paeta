@@ -1,0 +1,11 @@
+{
+  "id": "team-section",
+  "wrapperClass": "bg-[#e8f6fb] w-full py-10",
+  "containerClass": "max-w-[1200px] mx-auto px-6",
+  "imageWrapperClass": "relative w-full overflow-hidden rounded-xl shadow-lg",
+  "image": {
+    "src": "./images/team.png",
+    "alt": "Our team",
+    "class": "w-full h-[220px] md:h-[300px] object-cover object-center"
+  }
+}
