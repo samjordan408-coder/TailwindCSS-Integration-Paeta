@@ -1,0 +1,77 @@
+{
+  "id": "what-we-offer",
+  "wrapperClass": "bg-white",
+
+  "heroSection": {
+    "class": "relative bg-sky-400 py-12 md:py-20 overflow-hidden",
+
+    "containerClass": "relative z-10 max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center",
+
+    "title": "What We Offer?",
+    "description": "Discover our range of financial services designed to help you save, grow, and manage your money with trust and convenience.",
+
+    "badge": "Products we offer:",
+
+    "loans": {
+      "title": "Loans",
+      "groups": [
+        [
+          "Agricultural Loan",
+          "Industrial Loan",
+          "Commercial Loan",
+          "Medical Loan",
+          "Housing Loan"
+        ],
+        [
+          "Salary Loan",
+          "O.F.W. Loan",
+          "Pension Loan / SSS / GSIS",
+          "Other Government Supervised Loan"
+        ]
+      ]
+    },
+
+    "deposit": {
+      "title": "Deposit",
+      "items": [
+        "Savings Account Deposit",
+        "Time Deposit"
+      ]
+    },
+
+    "image": {
+      "src": "./images/vector art 2 section 2.png",
+      "alt": "Financial Illustration",
+      "class": "max-h-[320px] md:max-h-[420px] w-auto object-contain drop-shadow-2xl animate-pulse-slow"
+    },
+
+    "blob": "absolute -top-24 -right-24 w-96 h-96 bg-white/10 rounded-full blur-3xl"
+  },
+
+  "bottomSection": {
+    "class": "bg-slate-50 py-16 px-6",
+
+    "gridClass": "max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr_240px] gap-8 items-stretch",
+
+    "members": {
+      "title": "Members",
+      "items": [
+        "Philippine Deposit Insurance Corporation",
+        "Rural Bankers Association of the Philippines",
+        "Confederation of Southern Tagalog Rural Bank"
+      ]
+    },
+
+    "services": {
+      "title": "Services We Offer",
+      "items": [
+        "Bancnet - POS (Point of Sale) - Cash Out"
+      ]
+    },
+
+    "cta": {
+      "text1": "Let us know what",
+      "text2": "you want..."
+    }
+  }
+}
