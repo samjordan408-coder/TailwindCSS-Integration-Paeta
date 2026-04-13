@@ -1,0 +1,30 @@
+{
+  "id": "why-us",
+  "wrapperClass": "bg-[#00aeef] py-[60px] px-[20px] text-center font-[Arial]",
+
+  "badge": {
+    "text": "Why Choose Us?",
+    "class": "bg-white text-[#0d3f78] inline-block py-[12px] w-full max-w-[1200px] rounded-[10px] text-[28px] font-extrabold mb-[50px] shadow-[0_4px_10px_rgba(0,0,0,0.1)]"
+  },
+
+  "cards": [
+    {
+      "image": "./images/local.png",
+      "text": "Local bank <br> with a heart"
+    },
+    {
+      "image": "./images/fast.png",
+      "text": "Fast and <br> friendly service"
+    },
+    {
+      "image": "./images/finance.png",
+      "text": "Financial partner for <br> every stage of life"
+    },
+    {
+      "image": "./images/empower.png",
+      "text": "Empowering our <br> community for generations"
+    }
+  ],
+
+  "cardClass": "bg-white px-[20px] py-[40px] w-[240px] h-[300px] rounded-[30px] flex flex-col items-center justify-between transition-transform duration-300 shadow-[0_10px_20px_rgba(0,0,0,0.1)] hover:-translate-y-[10px]"
+}
