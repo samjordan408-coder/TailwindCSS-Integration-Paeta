@@ -51,8 +51,8 @@
     ],
 
     "social": [
-      { "icon": "./images/FB.png", "url": "#" },
-      { "icon": "./images/X.png", "url": "#" }
+      { "icon": "./images/FB.png", "url": "https://www.facebook.com/JORDAN.SAMSON.F" },
+      { "icon": "./images/X.png", "url": "https://www.facebook.com/JORDAN.SAMSON.F" }
     ]
   }
 }
