@@ -1,0 +1,27 @@
+{
+  "id": "testimonials",
+  "title": "Testimonials",
+  "cards": [
+    {
+      "name": "Jonathan Dela Cruz",
+      "role": "OFW",
+      "image": "/images/jonathan.png",
+      "rating": 4,
+      "text": "Even while I'm working abroad, I can easily manage my savings and send money to my family."
+    },
+    {
+      "name": "Maria Santos",
+      "role": "Small Business Owner",
+      "image": "/images/maria.png",
+      "rating": 4,
+      "text": "Rural Bank of Paete has been my trusted partner in growing my sari-sari store."
+    },
+    {
+      "name": "Angela Reyes",
+      "role": "Teacher",
+      "image": "/images/maria.png",
+      "rating": 4,
+      "text": "I opened my first savings account here and they helped me reach my goals."
+    }
+  ]
+}

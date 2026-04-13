@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+export const loadTestimonials = () => {
     const ratingBoxes = document.querySelectorAll('.rating-box');
 
     ratingBoxes.forEach(box => {
@@ -22,4 +22,4 @@ document.addEventListener('DOMContentLoaded', () => {
             input.addEventListener('change', updateRating);
         });
     });
-});
+};
