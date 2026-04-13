@@ -1,0 +1,14 @@
+{
+  "id": "mobile-banking",
+  "background": "./images/mbanking bg.jpg",
+
+  "header": "Mobile Banking",
+
+  "image": "./images/mobile.png",
+  "imageAlt": "App Preview",
+
+  "title": "Your bank in <br> your hands.",
+  "description": "Manage your savings, transfer funds, and apply for loans, anytime, anywhere.",
+
+  "button": "Coming Soon!"
+}
