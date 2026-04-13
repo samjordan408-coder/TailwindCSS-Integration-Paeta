@@ -84,7 +84,7 @@ function resetZoom() {
 
 // ... rest of your wheel/keydown/touch listeners ...
 
-
+export const initCarousel = () => {
   // Get the elements by the IDs we added above
   const track = document.getElementById('cardTrack');
   const nextBtn = document.getElementById('nextBtn');
@@ -113,3 +113,4 @@ function resetZoom() {
       behavior: 'smooth'
     });
   });
+}

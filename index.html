@@ -60,11 +60,26 @@
 </section>
 
 <!-- Account types carousel -->
-<section class="bg-white px-6 pb-12 pt-[220px] relative z-10" id="account_types">
-  <button id="prevBtn" ...>...</button>
-  <div id="cardTrack" class="flex overflow-x-auto snap-x gap-5"></div>
-  <button id="nextBtn" ...>...</button>
-</section>
+<div class="relative">
+
+  <!-- LEFT BUTTON -->
+  <button id="prevBtn"
+    class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md w-10 h-10 rounded-full flex items-center justify-center">
+    ❮
+  </button>
+
+  <!-- CAROUSEL TRACK -->
+  <div id="cardTrack"
+    class="flex gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory px-10">
+  </div>
+
+  <!-- RIGHT BUTTON -->
+  <button id="nextBtn"
+    class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md w-10 h-10 rounded-full flex items-center justify-center">
+    ❯
+  </button>
+
+</div>
 
   <!-- What We Offer section -->
   <section class="relative bg-sky-400 py-12 md:py-20 overflow-hidden" id="what-we-offer">
