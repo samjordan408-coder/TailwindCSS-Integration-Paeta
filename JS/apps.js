@@ -6,6 +6,7 @@ import { loadAbout } from "./Section/about.js";
 import { loadTeam } from "./Section/team.js";
 import { loadLoans } from "./Section/loan.js";
 import { loadNews } from "./Section/news.js";
+import { loadWhyUs } from "./Section/whyus.js";
 import initNav from "./Section/nav.js"; // ✅ FIXED (default import)
 import { initCarousel } from "./Section/account_types.js";
 document.addEventListener("DOMContentLoaded", async () => {
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     loadTeam();
     loadLoans();
     loadNews();
+    loadWhyUs
   } catch (err) {
     console.error("Main JS Error:", err);
   }
