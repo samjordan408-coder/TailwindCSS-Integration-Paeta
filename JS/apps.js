@@ -8,6 +8,8 @@ import { loadLoans } from "./Section/loan.js";
 import { loadNews } from "./Section/news.js";
 import initNav from "./Section/nav.js"; // ✅ FIXED (default import)
 import { initCarousel } from "./Section/account_types.js";
+import { loadWhyUs } from "./Section/whyus.js";
+
 document.addEventListener("DOMContentLoaded", async () => {
   try {
     // 🔥 Run nav FIRST (it uses fetch + async)
@@ -22,6 +24,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     loadTeam();
     loadLoans();
     loadNews();
+    loadWhyUs();
+
   } catch (err) {
     console.error("Main JS Error:", err);
   }
