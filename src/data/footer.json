@@ -1,0 +1,65 @@
+{
+  "id": "footer",
+  "wrapperClass": "",
+  "containerClass": "max-w-[1200px] mx-auto flex justify-between items-start flex-wrap gap-[30px]",
+
+  "brand": {
+    "title": "Rural Bank of Paete Inc.",
+    "tagline": "Maniguro, Magbangko, Umasenso"
+  },
+
+  "feedback": {
+    "title": "Feedback",
+    "inputs": [
+      {
+        "type": "text",
+        "placeholder": "Your Name"
+      },
+      {
+        "type": "text",
+        "placeholder": "Occupation"
+      }
+    ],
+    "textarea": {
+      "placeholder": "Feedback"
+    },
+    "button": "Send"
+  },
+
+  "columns": [
+    {
+      "title": "Navigation",
+      "links": [
+        { "label": "Home", "href": "#hero" },
+        { "label": "About Us", "href": "#about" },
+        { "label": "Contact Us", "href": "#contact-us" }
+      ]
+    },
+    {
+      "title": "Quick Links",
+      "links": [
+        { "label": "What We Offer", "href": "#what-we-offer" },
+        { "label": "Loan Services", "href": "#loans" },
+        { "label": "News & Updates", "href": "#news-updates" }
+      ]
+    },
+    {
+      "title": "Extra",
+      "hiddenOnMobile": true,
+      "links": [
+        { "label": "Mobile Banking", "href": "#mobile-banking" },
+        { "label": "Security & Trust", "href": "#security-trust" },
+        { "label": "Why Choose Us?", "href": "#why-us" }
+      ]
+    },
+    {
+      "title": "Services",
+      "links": [
+        {
+          "label": "Bancnet - POS (Point of Sale) - Cash Out",
+          "href": "#"
+        }
+      ]
+    }
+  ]
+}

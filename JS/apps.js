@@ -14,6 +14,8 @@ import { initCarousel } from "./Section/account_types.js";
 import{loadMobileBanking} from"./Section/mobile_banking.js"
 import { loadSecurityTrust } from "./Section/security_trust.js";
 import { loadTestimonials } from "./Section/testimonials.js";
+import { loadFooter } from "./Section/footer.js";
+import { loadCopyright } from "./Section/copyright.js";
 document.addEventListener("DOMContentLoaded", async () => {
   try {
     // 🔥 Run nav FIRST (it uses fetch + async)
@@ -34,6 +36,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     loadMobileBanking();
     loadSecurityTrust();
     loadContact();
+    loadFooter();
+    loadCopyright();
   } catch (err) {
     console.error("Main JS Error:", err);
   }
