@@ -25,7 +25,6 @@ const renderMobileBanking = (data) => {
          py-[60px] px-[20px] pt-[60px] pb-0 
          flex justify-center overflow-hidden font-[Inter]"
   style="background-image: url('${data.background}');"
->
     >
       <div class="max-w-[1200px] w-full flex flex-col items-center">
 
