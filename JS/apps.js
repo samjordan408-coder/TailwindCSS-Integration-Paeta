@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     loadTeam();
     loadLoans();
     loadNews();
-    loadWhyUs
+    loadWhyUs();
   } catch (err) {
     console.error("Main JS Error:", err);
   }
