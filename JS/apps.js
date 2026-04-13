@@ -10,6 +10,7 @@ import { loadWhyUs } from "./Section/whyus.js";
 import initNav from "./Section/nav.js"; // ✅ FIXED (default import)
 import { initCarousel } from "./Section/account_types.js";
 import{loadMobileBanking} from"./Section/mobile_banking.js"
+import { loadSecurityTrust } from "./Section/security_trust.js";
 document.addEventListener("DOMContentLoaded", async () => {
   try {
     // 🔥 Run nav FIRST (it uses fetch + async)
@@ -26,6 +27,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     loadNews();
     loadWhyUs();
     loadMobileBanking();
+    loadSecurityTrust();
   } catch (err) {
     console.error("Main JS Error:", err);
   }

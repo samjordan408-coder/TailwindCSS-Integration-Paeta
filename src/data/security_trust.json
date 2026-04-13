@@ -1,0 +1,26 @@
+{
+  "id": "security-trust",
+
+  "header": {
+    "icon": "/images/handshake.png",
+    "title": "Security & Trust"
+  },
+
+  "left": {
+    "heading": "We follow strict compliance with:",
+    "items": [
+      "BSP Regulations",
+      "AMLA & KYC Guidelines",
+      "Data Privacy Act of 2012"
+    ],
+    "icon": "/images/check.jpg",
+    "button": {
+      "text": "Learn more...",
+      "link": "#"
+    }
+  },
+
+  "right": {
+    "image": "/images/security vector.png"
+  }
+}
