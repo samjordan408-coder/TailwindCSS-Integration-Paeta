@@ -24,8 +24,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     loadTeam();
     loadLoans();
     loadNews();
-    loadMobileBanking();
-    loadWhyUs();
+    loadWhyUs
   } catch (err) {
     console.error("Main JS Error:", err);
   }
