@@ -1,0 +1,22 @@
+{
+  "secondaryNav": [
+    { "label": "What We Offer", "link": "#what-we-offer" },
+    { "label": "Loan Services", "link": "#loans" },
+    { "label": "News & Updates", "link": "#news-updates" },
+    { "label": "Mobile Banking", "link": "#mobile-banking" },
+    { "label": "Security & Trust", "link": "#security-trust" },
+    { "label": "Why Choose Us?", "link": "#why-us" }
+  ],
+  "sideMenu": [
+    { "label": "About Us", "link": "#about" },
+    { "label": "Loan Services", "link": "#loans" },
+    { "label": "News & Updates", "link": "#news-updates" },
+    { "label": "Contact Us", "link": "#contact" }
+  ],
+  "brand": {
+    "logo": "./images/logo.png",
+    "alt": "Rural Bank of Paete",
+    "title1": "Rural Bank of",
+    "title2": "Paete Inc."
+  }
+}

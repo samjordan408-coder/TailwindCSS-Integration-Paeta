@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
-  <script src="/src/rating.js"></script>
+  <script src="./JS/script.js"></script>
 </head>
 <body>
   <!-- Header: single blue bar. Put your logo image in assets/header-logo.png -->
@@ -18,42 +18,9 @@
 
 
   <!-- Secondary nav (optional) -->
-  <nav class="bg-slate-100/95 py-2.5 px-6">
-  <div class="max-w-7xl mx-auto flex items-center justify-center flex-wrap gap-4">
-    <ul class="list-none flex flex-wrap justify-center gap-x-6 gap-y-2">
-      <li>
-        <a href="#what-we-offer" class="text-[#0d3b66] no-underline font-medium text-[0.95rem] hover:opacity-90 transition-opacity">
-          What We Offer
-        </a>
-      </li>
-      <li>
-        <a href="#loans" class="text-[#0d3b66] no-underline font-medium text-[0.95rem] hover:opacity-90 transition-opacity">
-          Loan Services
-        </a>
-      </li>
-      <li>
-        <a href="#news-updates" class="text-[#0d3b66] no-underline font-medium text-[0.95rem] hover:opacity-90 transition-opacity">
-          News & Updates
-        </a>
-      </li>
-      <li>
-        <a href="#mobile-banking" class="text-[#0d3b66] no-underline font-medium text-[0.95rem] hover:opacity-90 transition-opacity">
-          Mobile Banking
-        </a>
-      </li>
-      <li>
-        <a href="#security-trust" class="text-[#0d3b66] no-underline font-medium text-[0.95rem] hover:opacity-90 transition-opacity">
-          Security & Trust
-        </a>
-      </li>
-      <li>
-        <a href="#why-us" class="text-[#0d3b66] no-underline font-medium text-[0.95rem] hover:opacity-90 transition-opacity">
-          Why Choose Us?
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
+ <nav id="secondary-nav" class="bg-slate-100/95 py-2.5 px-6"></nav>
+
+<nav id="scroll-nav" class="fixed top-0 left-0 right-0 z-[200] bg-white shadow-lg -translate-y-full opacity-0 pointer-events-none transition-all duration-300"></nav>
 
   <!-- Sticky nav: hidden at top, appears after scrolling past header -->
   <nav id="scroll-nav" class="fixed top-0 left-0 right-0 z-[200] bg-white shadow-lg -translate-y-full opacity-0 pointer-events-none transition-all duration-300 ease-in-out" aria-label="Sticky navigation">

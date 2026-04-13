@@ -1,5 +1,5 @@
 // Sticky burger nav — appears after header/nav scrolls out of view
-document.addEventListener('DOMContentLoaded', function () {
+export const initNavBehavior = () => {
   // Select your Tailwind Elements
   var siteHeader   = document.querySelector('.site-header');
   var scrollNav    = document.getElementById('scroll-nav');
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   handleScroll(); // Run once on load
-});
+};
 
 // --- KEEP YOUR ZOOM RESET LOGIC UNCHANGED BELOW ---
 function resetZoom() {
