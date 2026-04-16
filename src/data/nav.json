@@ -8,6 +8,7 @@
     { "label": "Why Choose Us?", "link": "#why-us" }
   ],
   "sideMenu": [
+    { "label": "Home", "link": "#hero"},
     { "label": "About Us", "link": "#about" },
     { "label": "Loan Services", "link": "#loans" },
     { "label": "News & Updates", "link": "#news-updates" },
